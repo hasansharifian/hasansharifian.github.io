@@ -2,6 +2,8 @@
 title: Home
 ---
 
+![MohammadHasan Sharifian](/photo.jpg)
+
 **MohammadHasan (Hasan) Sharifian**  
 PhD Candidate in Social Psychology, University of Michigan
 
