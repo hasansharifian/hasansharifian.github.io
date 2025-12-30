@@ -12,7 +12,7 @@ title: Home
   </div>
 
   <div style="width:220px; flex:0 0 220px;">
-    <img src="/photo.jpg" alt="MohammadHasan Sharifian" style="width:220px; height:auto; border-radius:8px;">
+    <img src="/photo.JPG" alt="MohammadHasan Sharifian" style="width:220px; height:auto; border-radius:8px;">
   </div>
 </div>
 
