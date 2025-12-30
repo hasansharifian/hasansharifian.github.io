@@ -1,3 +1,7 @@
+/* =============================
+   ROOT VARIABLES
+============================= */
+
 :root{
   --text: #222;
   --muted: #666;
@@ -6,6 +10,10 @@
   --border: #e8e8e8;
   --max: 980px;
 }
+
+/* =============================
+   GLOBAL RESET & TYPOGRAPHY
+============================= */
 
 *{ box-sizing: border-box; }
 
@@ -28,11 +36,19 @@ a:hover{
   text-decoration: underline;
 }
 
+/* =============================
+   LAYOUT
+============================= */
+
 .container{
   max-width: var(--max);
   margin: 0 auto;
   padding: 28px 18px;
 }
+
+/* =============================
+   NAVIGATION
+============================= */
 
 .nav{
   display: flex;
@@ -52,6 +68,10 @@ a:hover{
   color: var(--text);
 }
 
+/* =============================
+   HERO (HOME PAGE)
+============================= */
+
 .hero{
   display: grid;
   grid-template-columns: 1.6fr 0.9fr;
@@ -59,6 +79,39 @@ a:hover{
   align-items: start;
   padding-top: 8px;
 }
+
+.hero-text{
+  background: #fafafa;
+  padding: 22px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.hero-text .lead{
+  font-size: 19px;
+  line-height: 1.85;
+  margin-top: 14px;
+}
+
+.graphic-divider{
+  width: 64px;
+  height: 3px;
+  background: #d0d0d0;
+  margin: 26px 0;
+  border-radius: 2px;
+}
+
+.photo{
+  width: 100%;
+  max-width: 260px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+}
+
+/* =============================
+   HEADINGS & TEXT
+============================= */
 
 h1{
   font-size: 34px;
@@ -81,117 +134,17 @@ p{
   color: var(--muted);
 }
 
-.photo{
-  width: 100%;
-  max-width: 260px;
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-}
-
 .section{
   margin-top: 26px;
 }
 
+/* =============================
+   LISTS & ICON LISTS
+============================= */
+
 .list{
   padding-left: 18px;
   margin: 8px 0 0 0;
-}
-
-.footer{
-  margin-top: 54px;
-  padding-top: 18px;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 15px;
-}
-
-@media (max-width: 800px){
-  .hero{
-    grid-template-columns: 1fr;
-  }
-  .photo{
-    margin: 10px 0 0 0;
-    max-width: 220px;
-  }
-}
-.footer-links{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  font-size: 15px;
-  color: var(--muted);
-}
-
-.footer-links a{
-  color: var(--muted);
-}
-
-.footer-links a:hover{
-  color: var(--link);
-}
-
-.footer-lines{
-  font-size: 15px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.footer-lines a{
-  color: var(--muted);
-}
-
-.footer-lines a:hover{
-  color: var(--link);
-}
-.icon-list{
-  list-style: none;
-  padding-left: 0;
-}
-
-.icon-list li{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
-}
-
-.icon{
-  font-size: 16px;
-  color: var(--muted);
-  width: 20px;
-  text-align: center;
-}
-.cv-actions{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 12px 0 18px 0;
-}
-
-.btn{
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: #fff;
-  color: var(--text);
-  font-weight: 500;
-}
-
-.btn:hover{
-  text-decoration: none;
-  border-color: #cfcfcf;
-}
-
-.btn-ghost{
-  color: var(--muted);
-}
-
-.cv-embed{
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .icon-list{
@@ -212,143 +165,3 @@ p{
   color: var(--muted);
   width: 22px;
   text-align: center;
-  flex: 0 0 22px;
-}
-
-.map-embed{
-  margin-top: 10px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 760px;
-  height: 280px;
-}
-
-.map-embed iframe{
-  border: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.office-layout{
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 28px;
-  align-items: start;
-}
-
-.office-text{
-  padding-top: 4px;
-}
-
-.map-embed{
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-  height: 360px; /* bigger map */
-}
-
-@media (max-width: 900px){
-  .office-layout{
-    grid-template-columns: 1fr;
-  }
-
-  .map-embed{
-    height: 280px;
-  }
-}
-
-/* Contact page: office text left, map right */
-.office-layout{
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 28px;
-  align-items: start;
-}
-
-/* Make the map bigger on desktop */
-.office-layout .map-embed{
-  height: 380px;
-  max-width: none;
-}
-
-/* Mobile: stack */
-@media (max-width: 900px){
-  .office-layout{
-    grid-template-columns: 1fr;
-  }
-  .office-layout .map-embed{
-    height: 280px;
-  }
-}
-
-/* Home page: add texture without graphics */
-.hero-text{
-  background: #fafafa;
-  padding: 22px 24px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-}
-
-.lead p{
-  margin-bottom: 0;
-}
-
-.lead p strong{
-  font-weight: 700;
-}
-
-.section-divider{
-  height: 1px;
-  background: #e6e6e6;
-  margin: 22px 0;
-}
-
-/* Make the first block feel like an entry point */
-.hero-text .lead p{
-  font-size: 19px;
-  line-height: 1.85;
-}
-
-/* Buttons for quick navigation, subtle and academic */
-.quick-links{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 14px;
-}
-
-.btn{
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: #fff;
-  color: var(--text);
-  font-weight: 500;
-}
-
-.btn:hover{
-  text-decoration: none;
-  border-color: #cfcfcf;
-}
-
-.btn-ghost{
-  color: var(--muted);
-}
-
-/* Keep photo aligned nicely with the panel */
-.hero-photo{
-  padding-top: 6px;
-}
-
-@media (max-width: 800px){
-  .hero-text{
-    padding: 18px 18px;
-  }
-  .hero-text .lead p{
-    font-size: 18px;
-  }
-}
