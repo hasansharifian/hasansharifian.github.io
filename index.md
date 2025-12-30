@@ -15,6 +15,3 @@ title: Home
     <img src="/photo.JPG" alt="MohammadHasan Sharifian" style="width:220px; height:auto; border-radius:8px;">
   </div>
 </div>
-
-<hr>
-
