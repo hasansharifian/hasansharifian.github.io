@@ -166,7 +166,10 @@ p{
   color: var(--muted);
   width: 22px;
   text-align: center;
+}
 
+/* Add breathing room before footer */
 .hero{
   margin-bottom: 48px;
 }
+
