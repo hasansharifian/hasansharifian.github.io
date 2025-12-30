@@ -284,3 +284,71 @@ p{
   }
 }
 
+/* Home page: add texture without graphics */
+.hero-text{
+  background: #fafafa;
+  padding: 22px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.lead p{
+  margin-bottom: 0;
+}
+
+.lead p strong{
+  font-weight: 700;
+}
+
+.section-divider{
+  height: 1px;
+  background: #e6e6e6;
+  margin: 22px 0;
+}
+
+/* Make the first block feel like an entry point */
+.hero-text .lead p{
+  font-size: 19px;
+  line-height: 1.85;
+}
+
+/* Buttons for quick navigation, subtle and academic */
+.quick-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.btn:hover{
+  text-decoration: none;
+  border-color: #cfcfcf;
+}
+
+.btn-ghost{
+  color: var(--muted);
+}
+
+/* Keep photo aligned nicely with the panel */
+.hero-photo{
+  padding-top: 6px;
+}
+
+@media (max-width: 800px){
+  .hero-text{
+    padding: 18px 18px;
+  }
+  .hero-text .lead p{
+    font-size: 18px;
+  }
+}
