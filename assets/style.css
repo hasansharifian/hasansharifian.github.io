@@ -231,3 +231,31 @@ p{
   height: 100%;
   display: block;
 }
+.office-layout{
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.office-text{
+  padding-top: 4px;
+}
+
+.map-embed{
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 360px; /* bigger map */
+}
+
+@media (max-width: 900px){
+  .office-layout{
+    grid-template-columns: 1fr;
+  }
+
+  .map-embed{
+    height: 280px;
+  }
+}
