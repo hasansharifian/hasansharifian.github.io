@@ -1,17 +1,50 @@
----
-title: Home
----
-<div style="display:flex; gap:24px; align-items:flex-start;">
-  <div style="flex:1;">
-    <p><strong>MohammadHasan (Hasan) Sharifian</strong><br>
-    PhD Candidate in Social Psychology, University of Michigan</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MohammadHasan (Hasan) Sharifian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-    <p>
-      I am a PhD candidate in social psychology at the University of Michigan. My research examines the interaction between culture and group processes, with a primary focus on the Middle East. In cultural psychology, I study cognitive styles, emotion expression, and self-enhancement motivation in Middle Eastern populations, often in comparison with Western and East Asian samples. In the domain of group processes and intergroup relations, I investigate how cultural values such as honor and interdependence shape intergroup conflict.
-    </p>
-  </div>
+    <main class="hero">
+      <div>
+        <h1>MohammadHasan (Hasan) Sharifian</h1>
+        <p class="muted">PhD Candidate in Social Psychology, University of Michigan</p>
 
-  <div style="width:220px; flex:0 0 220px;">
-    <img src="/photo.JPG" alt="MohammadHasan Sharifian" style="width:220px; height:auto; border-radius:8px;">
+        <div class="section">
+          <p class="muted">
+            I maintain code, data, and papers on external platforms and link out from this site.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Quick links</h2>
+          <ul class="list">
+            <li><a href="cv.html">CV (Google Docs)</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <img class="photo" src="assets/photo.jpg" alt="MohammadHasan (Hasan) Sharifian" />
+      </div>
+    </main>
+
+    <div class="footer">
+      <div>Last updated: December 2025</div>
+    </div>
   </div>
-</div>
+</body>
+</html>
