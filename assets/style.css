@@ -74,11 +74,16 @@ a:hover{
 
 .hero{
   display: grid;
-  grid-template-columns: 1.6fr 0.9fr;
+  grid-template-columns: 1.3fr 1.2fr;
   gap: 36px;
   align-items: start;
   padding-top: 8px;
+  padding-bottom: 48px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid var(--border);
 }
+
+
 
 .hero-text{
   background: #fafafa;
@@ -168,8 +173,7 @@ p{
   text-align: center;
 }
 
-/* Add breathing room before footer */
-.hero{
-  margin-bottom: 48px;
-}
 
+.hero > div:last-child{
+  padding-top: 24px;
+}
