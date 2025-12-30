@@ -130,3 +130,18 @@ p{
 .footer-links a:hover{
   color: var(--link);
 }
+
+.footer-lines{
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.footer-lines a{
+  color: var(--muted);
+}
+
+.footer-lines a:hover{
+  color: var(--link);
+}
+
