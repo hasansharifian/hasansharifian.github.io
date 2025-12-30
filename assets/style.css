@@ -162,4 +162,35 @@ p{
   width: 20px;
   text-align: center;
 }
+.cv-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 18px 0;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.btn:hover{
+  text-decoration: none;
+  border-color: #cfcfcf;
+}
+
+.btn-ghost{
+  color: var(--muted);
+}
+
+.cv-embed{
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
 
