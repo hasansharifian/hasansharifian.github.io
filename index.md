@@ -18,10 +18,3 @@ title: Home
 
 <hr>
 
-<h3>Contact</h3>
-<ul>
-  <li><strong>Email:</strong> <a href="mailto:sharifih@umich.edu">sharifih@umich.edu</a></li>
-  <li><a href="https://scholar.google.com/citations?user=GlktT78AAAAJ&hl=en">Google Scholar</a></li>
-  <li><a href="https://www.linkedin.com/in/hasan-sharifian-039255219/">LinkedIn</a></li>
-  <li><a href="https://x.com/hasan_sharifian">Twitter (X)</a></li>
-</ul>
