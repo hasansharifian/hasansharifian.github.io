@@ -3,40 +3,51 @@
 
 @import "minima";
 
-/* =========================
-   Override Minima typography
-   ========================= */
+/* Google-Sites-ish typography */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-/* Body text */
-.site-content,
-.page-content {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+.page-content, .site-content {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 1.85;
-  color: #222;
+  line-height: 1.9;
+  color: #666666;
 }
 
-/* Paragraphs */
-.page-content p {
-  margin-bottom: 1.3em;
+/* Make the reading column wider (Minima default is too narrow) */
+.wrapper {
+  max-width: 980px;
 }
 
-/* Headings */
+/* Headings: darker and clean */
 .page-content h1,
 .page-content h2,
 .page-content h3,
 .page-content h4,
 .page-content h5 {
-  font-family: Georgia, "Times New Roman", serif;
+  color: #222222;
   font-weight: 600;
-  line-height: 1.3;
-  margin-top: 1.9em;
-  margin-bottom: 0.6em;
+  line-height: 1.25;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
 }
 
-/* Page title */
-.page-heading {
-  font-size: 2.4rem;
-  margin-bottom: 0.7em;
+/* Paragraph rhythm */
+.page-content p {
+  margin-bottom: 1.25em;
+}
+
+/* Links: more subdued */
+.page-content a, .site-nav a {
+  color: #2a5db0;
+  text-decoration: none;
+}
+.page-content a:hover, .site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header spacing (less cramped) */
+.site-header {
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
