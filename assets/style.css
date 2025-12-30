@@ -144,4 +144,22 @@ p{
 .footer-lines a:hover{
   color: var(--link);
 }
+.icon-list{
+  list-style: none;
+  padding-left: 0;
+}
+
+.icon-list li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.icon{
+  font-size: 16px;
+  color: var(--muted);
+  width: 20px;
+  text-align: center;
+}
 
