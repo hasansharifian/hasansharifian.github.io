@@ -169,11 +169,12 @@ p{
 
 .project-row{
   display: grid;
-  grid-template-columns: 1fr 72px;
-  gap: 24px;
-  align-items: center;   /* aligns icon with project title */
-  margin-bottom: 2.2rem;
+  grid-template-columns: 1fr 120px;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 2.6rem;
 }
+
 
 
 .project-text{
@@ -181,11 +182,12 @@ p{
 }
 
 .project-icon{
-  width: 72px;
-  height: 72px;
-  opacity: 0.9;
+  width: 96px;
+  height: 96px;
+  opacity: 0.95;
   filter: invert(1) brightness(0);
 }
+
 
 
 
