@@ -169,11 +169,12 @@ p{
 
 .project-row{
   display: grid;
-  grid-template-columns: 1fr 120px;
-  gap: 32px;
+  grid-template-columns: minmax(0, 65ch) 220px;
+  gap: 40px;
   align-items: center;
-  margin-bottom: 2.6rem;
+  margin-bottom: 3rem;
 }
+
 
 
 
