@@ -168,12 +168,11 @@ p{
 /* ===== THIS IS THE FIX ===== */
 
 .project-row{
-  display: grid;
-  grid-template-columns: minmax(0, 65ch) 220px;
-  gap: 40px;
-  align-items: center;
-  margin-bottom: 3rem;
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 3.2rem;
 }
+
 
 
 
@@ -183,11 +182,17 @@ p{
 }
 
 .project-icon{
+  position: absolute;
+  top: 0.2rem;
+  right: 0;
+
   width: 160px;
   height: 160px;
+
   opacity: 0.95;
   filter: invert(1) brightness(0);
 }
+
 
 
 
