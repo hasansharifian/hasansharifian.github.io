@@ -107,7 +107,7 @@ a:hover{
 }
 
 /* =============================
-   HEADINGS & TEXT
+   HEADINGS & TEXT (GLOBAL)
 ============================= */
 
 h1{
@@ -137,18 +137,23 @@ p{
 }
 
 /* =============================
-   SECTIONS
+   SECTIONS (GLOBAL)
 ============================= */
 
 .section{
-  margin-top: 4rem;
+  margin-top: 2rem;   /* compact for Contact */
 }
 
 /* =============================
-   PROJECTS PAGE TYPOGRAPHY
+   PROJECTS PAGE ONLY
+   (requires <main class="projects">)
 ============================= */
 
-main h2{
+.projects .section{
+  margin-top: 4rem;
+}
+
+.projects h2{
   margin-top: 3.5rem;
   margin-bottom: 1.5rem;
   padding-top: 2.5rem;
@@ -157,16 +162,16 @@ main h2{
   letter-spacing: 0.02em;
 }
 
-main h3{
+.projects h3{
   margin-top: 2.25rem;
   margin-bottom: 0.6rem;
 }
 
-.section h3:first-of-type{
+.projects .section h3:first-of-type{
   margin-top: 1.5rem;
 }
 
-main p{
+.projects p{
   margin-bottom: 1.4rem;
   max-width: 65ch;
 }
@@ -214,7 +219,7 @@ main p{
     padding: 12px 14px;
   }
 
-  main h2{
+  .projects h2{
     padding-top: 2rem;
   }
 }
