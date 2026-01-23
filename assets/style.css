@@ -76,7 +76,38 @@ a:hover{
 }
 
 /* =============================
-   HEADINGS & TEXT
+   HERO
+============================= */
+
+.hero{
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.hero-text{
+  background: #fafafa;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.hero-image{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photo{
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* =============================
+   HEADINGS & TEXT (GLOBAL)
 ============================= */
 
 h1{
@@ -106,12 +137,17 @@ p{
 }
 
 /* =============================
-   SECTIONS
+   SECTIONS (GLOBAL)
 ============================= */
 
 .section{
-  margin-top: 2rem;
+  margin-top: 2rem;   /* compact for Contact */
 }
+
+/* =============================
+   PROJECTS PAGE ONLY
+   (requires <main class="projects">)
+============================= */
 
 .projects .section{
   margin-top: 4rem;
@@ -141,24 +177,101 @@ p{
 }
 
 /* =============================
-   PROJECT ICONS (ONLY ADDITION)
+   PROJECT ICONS (DECORATIVE ONLY)
+   No layout impact.
 ============================= */
 
-.project-icon{
-  float: right;
-  width: 32px;
-  height: 32px;
-  margin-left: 18px;
-  margin-top: 2px;
-  opacity: 1;
+/* Create a gutter so icons sit in the unused right whitespace */
+.projects{
+  padding-right: 88px;
 }
 
-/* =============================
-   RESPONSIVE
-============================= */
+/* Each project heading gets a decorative icon placed in the gutter */
+.projects .project-h{
+  position: relative;
+}
 
+.projects .project-h::after{
+  content: "";
+  position: absolute;
+  right: -72px;     /* puts it into the gutter created above */
+  top: 2px;
+  width: 30px;
+  height: 30px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* Make white icons visible and consistent */
+  filter: brightness(0) saturate(100%) invert(24%) sepia(82%) saturate(2400%) hue-rotate(199deg) brightness(96%) contrast(92%);
+  opacity: 0.95;
+}
+
+/* Map each heading class to the correct icon file */
+.projects .project-h.p1::after{
+  background-image: url("icons/cognitive-style.png");
+}
+
+.projects .project-h.p2::after{
+  background-image: url("icons/honor-iat.png");
+}
+
+.projects .project-h.p3::after{
+  background-image: url("icons/predictors-of-prejudice.png");
+}
+
+.projects .project-h.p4::after{
+  background-image: url("icons/conflict-strategies.png");
+}
+
+/* Hide gutter icons on small screens (prevents crowding) */
 @media (max-width: 800px){
+  .projects{
+    padding-right: 0;
+  }
+  .projects .project-h::after{
+    display: none;
+  }
+
+  .hero{
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .photo{
+    max-width: 260px;
+  }
+
+  .hero-text{
+    padding: 12px 14px;
+  }
+
   .projects h2{
     padding-top: 2rem;
   }
+}
+
+/* =============================
+   FOOTER
+============================= */
+
+.footer{
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-lines{
+  line-height: 1.5;
+}
+
+.footer-lines a{
+  color: var(--muted);
+}
+
+.footer-lines a:hover{
+  color: var(--link);
 }
