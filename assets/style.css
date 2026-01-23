@@ -107,7 +107,7 @@ a:hover{
 }
 
 /* =============================
-   HEADINGS & TEXT (GLOBAL)
+   HEADINGS & TEXT
 ============================= */
 
 h1{
@@ -137,16 +137,15 @@ p{
 }
 
 /* =============================
-   SECTIONS (GLOBAL)
+   SECTIONS
 ============================= */
 
 .section{
-  margin-top: 2rem;   /* compact for Contact */
+  margin-top: 2rem;
 }
 
 /* =============================
    PROJECTS PAGE ONLY
-   (requires <main class="projects">)
 ============================= */
 
 .projects .section{
@@ -162,42 +161,33 @@ p{
   letter-spacing: 0.02em;
 }
 
-.projects h3{
-  margin-top: 2.25rem;
-  margin-bottom: 0.6rem;
-}
-
-.projects .section h3:first-of-type{
-  margin-top: 1.5rem;
-}
-
 .projects p{
-  margin-bottom: 1.4rem;
   max-width: 65ch;
 }
 
-/* =============================
-   FOOTER
-============================= */
+/* ===== THIS IS THE FIX ===== */
 
-.footer{
-  margin-top: 32px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 14px;
+.project-row{
+  display: grid;
+  grid-template-columns: 1fr 56px;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 2.2rem;
 }
 
-.footer-lines{
-  line-height: 1.5;
+.project-text{
+  max-width: 65ch;
 }
 
-.footer-lines a{
-  color: var(--muted);
-}
+.project-icon{
+  width: 36px;
+  height: 36px;
+  opacity: 0.95;
 
-.footer-lines a:hover{
-  color: var(--link);
+  /* Tint white icons to link color so they are visible */
+  filter: brightness(0) saturate(100%) invert(24%) sepia(82%)
+          saturate(2400%) hue-rotate(199deg)
+          brightness(96%) contrast(92%);
 }
 
 /* =============================
@@ -205,38 +195,19 @@ p{
 ============================= */
 
 @media (max-width: 800px){
+  .project-row{
+    grid-template-columns: 1fr;
+  }
+
+  .project-icon{
+    display: none;
+  }
 
   .hero{
     grid-template-columns: 1fr;
-    gap: 22px;
   }
 
   .photo{
     max-width: 260px;
   }
-
-  .hero-text{
-    padding: 12px 14px;
-  }
-
-  .projects h2{
-    padding-top: 2rem;
-  }
-}
-
-/* =============================
-   PROJECT ICONS (PROJECTS PAGE ONLY)
-============================= */
-
-/* Put small icons in the right-side whitespace without affecting text */
-.projects .project-icon{
-  float: right;
-  width: 30px;
-  height: 30px;
-  margin-left: 18px;
-  margin-top: 2px;
-  opacity: 1;
-
-  /* Make white transparent icons visible by tinting them to your link color */
-  filter: brightness(0) saturate(100%) invert(24%) sepia(82%) saturate(2400%) hue-rotate(199deg) brightness(96%) contrast(92%);
 }
