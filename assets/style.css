@@ -191,10 +191,8 @@ p{
 
   opacity: 0.95;
 
-  /* Tint white icons to link color so they are visible */
-  filter: brightness(0) saturate(100%) invert(24%) sepia(82%)
-          saturate(2400%) hue-rotate(199deg)
-          brightness(96%) contrast(92%);
+  /* render white outline icons as dark gray */
+  filter: invert(1) brightness(0.25);
 }
 
 
@@ -235,16 +233,22 @@ p{
    FOOTER (GLOBAL, FOOTNOTE STYLE)
 ============================= */
 
+/* =============================
+   FOOTER (GLOBAL, FOOTNOTE STYLE)
+============================= */
+
 .footer{
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 3rem;              /* close enough to feel connected */
+  padding-top: 1.2rem;
+
+  border-top: 1px solid var(--border);
 
   color: var(--muted);
   font-size: 12.5px;
 }
 
 .footer-lines{
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .footer a{
@@ -254,3 +258,4 @@ p{
 .footer a:hover{
   color: var(--link);
 }
+
