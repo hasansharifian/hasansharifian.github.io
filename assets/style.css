@@ -169,20 +169,24 @@ p{
 
 .project-row{
   display: grid;
-  grid-template-columns: 1fr 56px;
+  grid-template-columns: 1fr 72px;
   gap: 24px;
-  align-items: start;
+  align-items: center;   /* aligns icon with project title */
   margin-bottom: 2.2rem;
 }
+
 
 .project-text{
   max-width: 65ch;
 }
 
 .project-icon{
-  width: 36px;
-  height: 36px;
-  opacity: 0.95;
+  width: 48px;
+  height: 48px;
+  opacity: 0.9;
+  filter: invert(1) brightness(0);
+}
+
 
   /* Tint white icons to link color so they are visible */
   filter: brightness(0) saturate(100%) invert(24%) sepia(82%)
