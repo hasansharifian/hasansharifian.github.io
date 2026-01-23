@@ -181,11 +181,12 @@ p{
 }
 
 .project-icon{
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
   opacity: 0.9;
   filter: invert(1) brightness(0);
 }
+
 
 
   /* Tint white icons to link color so they are visible */
