@@ -174,3 +174,29 @@ p{
 }
 
 
+/* -------------------------------
+   Projects page typography tweaks
+   ------------------------------- */
+
+.section {
+  margin-top: 3rem;
+}
+
+main h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+main h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+main p {
+  margin-bottom: 1.25rem;
+  max-width: 65ch;
+}
+
