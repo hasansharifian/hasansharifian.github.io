@@ -259,3 +259,7 @@ p{
   color: var(--link);
 }
 
+/* Ensure footer separator never visually collides with content borders */
+main{
+  padding-bottom: 2.5rem;
+}
