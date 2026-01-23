@@ -183,15 +183,16 @@ p{
 
 .project-icon{
   position: absolute;
-  top: 0.2rem;
+  top: 2.2rem;        /* moves icon lower to align with title block */
   right: 0;
 
-  width: 160px;
-  height: 160px;
+  width: 200px;       /* perceptually correct for outline icons */
+  height: 200px;
 
   opacity: 0.95;
   filter: invert(1) brightness(0);
 }
+
 
 
 
