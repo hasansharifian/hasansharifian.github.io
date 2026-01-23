@@ -15,7 +15,9 @@
    GLOBAL RESET & TYPOGRAPHY
 ============================= */
 
-*{ box-sizing: border-box; }
+*{
+  box-sizing: border-box;
+}
 
 html, body{
   margin: 0;
@@ -52,11 +54,16 @@ a:hover{
 
 .nav{
   display: flex;
-  gap: 18px;
   align-items: center;
   padding: 10px 0 20px 0;
   border-bottom: 1px solid var(--border);
   margin-bottom: 26px;
+}
+
+.nav p{
+  display: flex;
+  gap: 22px;
+  margin: 0;
 }
 
 .nav a{
@@ -106,7 +113,7 @@ a:hover{
 h1{
   font-size: 32px;
   line-height: 1.25;
-  margin: 0 0 8px 0;
+  margin: 0 0 12px 0;
   font-weight: 700;
 }
 
@@ -114,6 +121,11 @@ h2{
   font-size: 21px;
   margin: 26px 0 10px 0;
   font-weight: 700;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 500;
 }
 
 p{
@@ -125,7 +137,42 @@ p{
 }
 
 /* =============================
-   FOOTER (ONLY SEPARATOR LINE)
+   SECTIONS
+============================= */
+
+.section{
+  margin-top: 4rem;
+}
+
+/* =============================
+   PROJECTS PAGE TYPOGRAPHY
+============================= */
+
+main h2{
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+main h3{
+  margin-top: 2.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.section h3:first-of-type{
+  margin-top: 1.5rem;
+}
+
+main p{
+  margin-bottom: 1.4rem;
+  max-width: 65ch;
+}
+
+/* =============================
+   FOOTER
 ============================= */
 
 .footer{
@@ -148,17 +195,12 @@ p{
   color: var(--link);
 }
 
-.nav p {
-  display: flex;
-  gap: 20px;
-}
-
-
 /* =============================
    RESPONSIVE
 ============================= */
 
 @media (max-width: 800px){
+
   .hero{
     grid-template-columns: 1fr;
     gap: 22px;
@@ -171,32 +213,8 @@ p{
   .hero-text{
     padding: 12px 14px;
   }
+
+  main h2{
+    padding-top: 2rem;
+  }
 }
-
-
-/* -------------------------------
-   Projects page typography tweaks
-   ------------------------------- */
-
-.section {
-  margin-top: 3rem;
-}
-
-main h2 {
-  margin-top: 3.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-main h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-main p {
-  margin-bottom: 1.25rem;
-  max-width: 65ch;
-}
-
