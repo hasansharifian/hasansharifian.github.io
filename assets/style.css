@@ -76,38 +76,7 @@ a:hover{
 }
 
 /* =============================
-   HERO
-============================= */
-
-.hero{
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
-  gap: 40px;
-  align-items: start;
-  margin-bottom: 28px;
-}
-
-.hero-text{
-  background: #fafafa;
-  padding: 14px 16px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-}
-
-.hero-image{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.photo{
-  width: 100%;
-  max-width: 380px;
-  border-radius: 10px;
-  display: block;
-}
-
-/* =============================
-   HEADINGS & TEXT (GLOBAL)
+   HEADINGS & TEXT
 ============================= */
 
 h1{
@@ -126,6 +95,9 @@ h2{
 h3{
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 p{
@@ -137,17 +109,12 @@ p{
 }
 
 /* =============================
-   SECTIONS (GLOBAL)
+   SECTIONS
 ============================= */
 
 .section{
-  margin-top: 2rem;   /* compact for Contact */
+  margin-top: 2rem;
 }
-
-/* =============================
-   PROJECTS PAGE ONLY
-   (requires <main class="projects">)
-============================= */
 
 .projects .section{
   margin-top: 4rem;
@@ -162,42 +129,19 @@ p{
   letter-spacing: 0.02em;
 }
 
-.projects h3{
-  margin-top: 2.25rem;
-  margin-bottom: 0.6rem;
-}
-
-.projects .section h3:first-of-type{
-  margin-top: 1.5rem;
-}
-
 .projects p{
   margin-bottom: 1.4rem;
   max-width: 65ch;
 }
 
 /* =============================
-   FOOTER
+   PROJECT ICONS (FINAL, WORKING)
 ============================= */
 
-.footer{
-  margin-top: 32px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.footer-lines{
-  line-height: 1.5;
-}
-
-.footer-lines a{
-  color: var(--muted);
-}
-
-.footer-lines a:hover{
-  color: var(--link);
+.project-icon{
+  width: 26px;
+  height: 26px;
+  opacity: 0.9;
 }
 
 /* =============================
@@ -205,51 +149,7 @@ p{
 ============================= */
 
 @media (max-width: 800px){
-
-  .hero{
-    grid-template-columns: 1fr;
-    gap: 22px;
+  h3{
+    flex-wrap: wrap;
   }
-
-  .photo{
-    max-width: 260px;
-  }
-
-  .hero-text{
-    padding: 12px 14px;
-  }
-
-  .projects h2{
-    padding-top: 2rem;
-  }
-}
-
-
-/* Project icons in right margin */
-.project-block {
-  position: relative;
-  padding-right: 120px; /* preserves original text width */
-  margin-bottom: 36px;
-}
-
-.project-side-icon {
-  position: absolute;
-  top: 0.3em;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  opacity: 0.55;
-  filter: grayscale(100%) brightness(0.55);
-}
-
-
-/* Small, unobtrusive project icons */
-.project-inline-icon {
-  float: right;
-  width: 28px;
-  height: 28px;
-  margin-left: 16px;
-  margin-top: -6px;
-  opacity: 0.65;
-  filter: grayscale(100%) brightness(0.6);
 }
