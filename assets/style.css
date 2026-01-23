@@ -183,27 +183,20 @@ p{
 
 .project-icon{
   position: absolute;
-  top: 2.2rem;        /* moves icon lower to align with title block */
+  top: 2.2rem;
   right: 0;
 
-  width: 200px;       /* perceptually correct for outline icons */
+  width: 200px;
   height: 200px;
 
   opacity: 0.95;
-  filter: invert(1) brightness(0);
-}
-
-
-
-
-
-
 
   /* Tint white icons to link color so they are visible */
   filter: brightness(0) saturate(100%) invert(24%) sepia(82%)
           saturate(2400%) hue-rotate(199deg)
           brightness(96%) contrast(92%);
 }
+
 
 /* =============================
    RESPONSIVE
@@ -226,3 +219,31 @@ p{
     max-width: 260px;
   }
 }
+
+
+/* =============================
+   FOOTER
+============================= */
+
+.footer{
+  margin-top: 6rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid var(--border);
+
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.footer-lines{
+  line-height: 1.5;
+}
+
+.footer a{
+  color: var(--muted);
+}
+
+.footer a:hover{
+  color: var(--link);
+}
+
