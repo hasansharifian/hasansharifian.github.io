@@ -95,9 +95,6 @@ h2{
 h3{
   font-size: 18px;
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 p{
@@ -129,19 +126,31 @@ p{
   letter-spacing: 0.02em;
 }
 
+.projects h3{
+  margin-top: 2.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.projects .section h3:first-of-type{
+  margin-top: 1.5rem;
+}
+
 .projects p{
   margin-bottom: 1.4rem;
   max-width: 65ch;
 }
 
 /* =============================
-   PROJECT ICONS (FINAL, WORKING)
+   PROJECT ICONS (ONLY ADDITION)
 ============================= */
 
 .project-icon{
-  width: 26px;
-  height: 26px;
-  opacity: 0.9;
+  float: right;
+  width: 32px;
+  height: 32px;
+  margin-left: 18px;
+  margin-top: 2px;
+  opacity: 1;
 }
 
 /* =============================
@@ -149,7 +158,7 @@ p{
 ============================= */
 
 @media (max-width: 800px){
-  h3{
-    flex-wrap: wrap;
+  .projects h2{
+    padding-top: 2rem;
   }
 }
