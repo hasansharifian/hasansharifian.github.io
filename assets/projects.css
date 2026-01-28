@@ -2,29 +2,54 @@
    PROJECTS PAGE ONLY
 ============================= */
 
-/* Remove the big "Projects" title */
+/* Remove the Projects title entirely */
 .projects h1{
   display: none;
+}
+
+/* =============================
+   KILL ALL INHERITED SEPARATORS
+============================= */
+
+/* Neutralize any borders/margins coming from global styles */
+.projects,
+.projects .section,
+.projects h2{
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+/* Pull content up so no ghost line remains */
+.projects{
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* =============================
    SECTIONS
 ============================= */
 
-/* Stronger section separation */
+/* Big separation between sections */
 .projects .section{
-  margin-top: 4rem;      /* BIG gap between sections */
+  margin-top: 4.5rem;
   padding-top: 0;
-  border-top: none;
 }
 
-/* Larger, clearer section headers */
+/* SECTION TITLES — MAKE THEM DISTINCT */
 .projects .section > h2{
   text-align: center;
-  font-size: 24px;       /* noticeably bigger */
+
+  font-size: 26px;              /* clearly bigger than project titles */
   font-weight: 700;
-  margin: 0 0 2.5rem 0;  /* BIG gap before first project */
-  color: #222;
+  letter-spacing: 0.04em;       /* subtle authority */
+  text-transform: uppercase;   /* categorical feel */
+
+  color: #111;                  /* darker than body text */
+
+  margin: 0 0 3rem 0;           /* strong separation from projects */
+  padding-bottom: 0.6rem;
+
+  border-bottom: 2px solid #e0e0e0; /* intentional divider */
 }
 
 /* =============================
@@ -42,9 +67,9 @@
   border-radius: 12px;
 
   padding: 1.6rem 1.8rem;
-  margin-bottom: 2.2rem;   /* BIG space between projects */
+  margin-bottom: 2.4rem;        /* CLEAR space between projects */
 
-  cursor: default;         /* no affordance */
+  cursor: default;
 }
 
 /* =============================
@@ -54,35 +79,31 @@
 .projects .project-text{
   max-width: 65ch;
   flex: 1;
-  min-width: 0;
 }
 
-/* Project titles are now real headings */
+/* Project titles remain subordinate */
 .projects .project-title{
   background: none;
   border: none;
   padding: 0;
-  font: inherit;
 
+  font: inherit;
   font-size: 19px;
   font-weight: 600;
+  color: #222;
 
   display: block;
   cursor: default;
   text-align: left;
 }
 
-/* Remove chevron completely */
-.projects .chevron{
-  display: none;
-}
-
-/* Remove hint completely */
+/* No chevrons, no hints */
+.projects .chevron,
 .projects .hint{
   display: none;
 }
 
-/* Description always visible */
+/* Descriptions always visible */
 .projects .project-description{
   display: block;
   margin-top: 0.9rem;
