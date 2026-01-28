@@ -176,15 +176,17 @@ main{
 
 @media (max-width: 800px){
   .hero{
-    grid-template-columns: 1fr;
-    gap: 22px;
+    display: block;
   }
 
   .hero-image{
     justify-content: center;
+    margin-top: 1rem;
   }
 
   .photo{
-    max-width: 100%;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
   }
 }
