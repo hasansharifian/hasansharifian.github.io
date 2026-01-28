@@ -1,23 +1,21 @@
 /* =============================
    PROJECTS PAGE ONLY
+   SAFE OVERRIDES
 ============================= */
 
+/* Remove the big "Projects" title */
 .projects h1{
-  margin-bottom: 1.2rem;
+  display: none;
 }
 
-/* Section headers: compact labels */
-.projects h2{
-  font-size: 17px;
-  font-weight: 600;
-  margin: 1.6rem 0 0.4rem 0;
-  color: #333;
+/* Center ONLY the category headers */
+.projects .section > h2{
+  text-align: center;
 }
 
 /* =============================
    PROJECT LIST
-   Collapsed = cheap
-   Expanded = expensive
+   (unchanged structure, tightened feel)
 ============================= */
 
 .projects .project-row{
@@ -33,6 +31,7 @@
   margin-bottom: 0.25rem;
 
   cursor: pointer;
+
   transition:
     background 0.15s ease,
     padding 0.15s ease,
@@ -117,7 +116,6 @@
    ICONS
 ============================= */
 
-/* Cheap when collapsed */
 .projects .project-icon{
   width: 96px;
   height: 96px;
@@ -126,7 +124,6 @@
   flex-shrink: 0;
 }
 
-/* Expensive when expanded */
 .projects .project-row.open .project-icon{
   width: 120px;
   height: 120px;
@@ -144,5 +141,9 @@
 
   .projects .project-icon{
     display: none;
+  }
+
+  .projects .section > h2{
+    text-align: left;
   }
 }
