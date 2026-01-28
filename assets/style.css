@@ -123,11 +123,6 @@ h2{
   font-weight: 700;
 }
 
-h3{
-  font-size: 18px;
-  font-weight: 500;
-}
-
 p{
   margin: 0 0 12px 0;
 }
@@ -145,7 +140,7 @@ p{
 }
 
 /* =============================
-   PROJECTS PAGE ONLY
+   PROJECTS PAGE
 ============================= */
 
 .projects .section{
@@ -165,17 +160,9 @@ p{
   max-width: 65ch;
 }
 
-/* ===== THIS IS THE FIX ===== */
-
-
-
-
-
-
-
-.project-text{
-  max-width: 65ch;
-}
+/* =============================
+   PROJECT ROWS (FINAL)
+============================= */
 
 .project-row{
   display: flex;
@@ -188,6 +175,7 @@ p{
 .project-text{
   max-width: 65ch;
   flex: 1;
+  min-width: 0;
 }
 
 .project-icon{
@@ -198,13 +186,36 @@ p{
   flex-shrink: 0;
 }
 
+.project-title{
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.project-title:hover{
+  text-decoration: underline;
+}
+
+.project-description{
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.project.open .project-description{
+  display: block;
+}
+
 /* =============================
    RESPONSIVE
 ============================= */
 
 @media (max-width: 800px){
   .project-row{
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .project-icon{
@@ -220,31 +231,14 @@ p{
   }
 }
 
-
 /* =============================
-   FOOTNOTE SEPARATOR (GLOBAL)
-============================= */
-
-.footnote-separator{
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 5rem 0 1.5rem 0;
-}
-
-/* =============================
-   FOOTER (GLOBAL, FOOTNOTE STYLE)
-============================= */
-
-/* =============================
-   FOOTER (GLOBAL, FOOTNOTE STYLE)
+   FOOTER
 ============================= */
 
 .footer{
-  margin-top: 3rem;              /* close enough to feel connected */
+  margin-top: 3rem;
   padding-top: 1.2rem;
-
   border-top: 1px solid var(--border);
-
   color: var(--muted);
   font-size: 12.5px;
 }
@@ -261,68 +255,6 @@ p{
   color: var(--link);
 }
 
-/* Ensure footer separator never visually collides with content borders */
 main{
   padding-bottom: 2.5rem;
 }
-
-
-
-.project-title {
-  background: none;
-  border: none;
-  padding: 0;
-  font-family: inherit;
-  font-size: 1.05rem;
-  font-weight: 600;
-  text-align: left;
-  cursor: pointer;
-}
-
-.project-title:hover {
-  text-decoration: underline;
-}
-
-.project-description {
-  display: none;
-  margin-top: 0.5rem;
-  max-width: 700px;
-}
-
-.project.open .project-description {
-  display: block;
-}
-
-
-.project-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-
-.project-text {
-  flex: 1;
-  min-width: 0;
-}
-
-
-.project-icon {
-  flex-shrink: 0;
-  align-self: flex-start;
-}
-
-.project-description {
-  display: none;
-}
-
-.project.open .project-description {
-  display: block;
-}
-
-.project-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
