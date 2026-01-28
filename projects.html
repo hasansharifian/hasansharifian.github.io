@@ -30,7 +30,7 @@
       <div class="section">
         <h2>Cultural Psychology</h2>
 
-        <div class="project-row project clickable">
+        <div class="project-row clickable">
           <div class="project-text">
             <button class="project-title">Cognitive Styles</button>
             <div class="project-description">
@@ -42,7 +42,7 @@
           <img src="assets/icons/cognitive-style.png" class="project-icon" alt="">
         </div>
 
-        <div class="project-row project clickable">
+        <div class="project-row clickable">
           <div class="project-text">
             <button class="project-title">The Interdependence of Honor</button>
             <div class="project-description">
@@ -58,7 +58,7 @@
       <div class="section">
         <h2>Intergroup Relations and Conflict</h2>
 
-        <div class="project-row project clickable">
+        <div class="project-row clickable">
           <div class="project-text">
             <button class="project-title">Honor, Ideology, and Prejudice</button>
             <div class="project-description">
@@ -70,7 +70,7 @@
           <img src="assets/icons/predictors-of-prejudice.png" class="project-icon" alt="">
         </div>
 
-        <div class="project-row project clickable">
+        <div class="project-row clickable">
           <div class="project-text">
             <button class="project-title">Cultural Variation in Conflict Strategy</button>
             <div class="project-description">
@@ -103,9 +103,6 @@
     <script>
       document.querySelectorAll(".project-row.clickable").forEach(row => {
         row.addEventListener("click", () => {
-          document.querySelectorAll(".project").forEach(p => {
-            if (p !== row) p.classList.remove("open");
-          });
           row.classList.toggle("open");
         });
       });
