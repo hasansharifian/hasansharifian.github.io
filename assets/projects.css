@@ -1,53 +1,41 @@
 /* =============================
    PROJECTS PAGE ONLY
-   SAFE OVERRIDES
 ============================= */
 
-/* Remove the big "Projects" title */
+/* Remove the big Projects title */
 .projects h1{
   display: none;
 }
 
-/* Center ONLY the category headers */
+/* Center category headers */
 .projects .section > h2{
   text-align: center;
 }
 
 /* =============================
-   PROJECT LIST
-   (unchanged structure, tightened feel)
+   PROJECT CARDS
+   (open by default)
 ============================= */
 
 .projects .project-row{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.2rem;
 
-  background: #f4f4f4;
-  border-radius: 6px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
 
-  padding: 0.25rem 0.7rem;
-  margin-bottom: 0.25rem;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.2rem;
 
   cursor: pointer;
-
-  transition:
-    background 0.15s ease,
-    padding 0.15s ease,
-    border 0.15s ease;
+  transition: background 0.15s ease;
 }
 
 .projects .project-row:hover{
-  background: #ececec;
-}
-
-/* Expanded state */
-.projects .project-row.open{
-  padding: 1.2rem 1.3rem;
-  margin-bottom: 0.9rem;
-  background: #fafafa;
-  border: 1px solid #e8e8e8;
+  background: #f4f4f4;
 }
 
 /* =============================
@@ -68,48 +56,32 @@
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.4rem;
   cursor: inherit;
   text-align: left;
 }
 
-/* Chevron */
+/* Chevron (still functional) */
 .projects .chevron::before{
-  content: "▸";
-  font-size: 0.85em;
+  content: "▾";
+  font-size: 0.9em;
   color: #666;
   transition: transform 0.15s ease;
 }
 
-.projects .project-row.open .chevron::before{
-  transform: rotate(90deg);
+.projects .project-row:not(.open) .chevron::before{
+  content: "▸";
 }
 
-/* Hint */
-.projects .hint{
-  display: block;
-  font-size: 0.68rem;
-  color: #666;
-  opacity: 0;
-  margin-left: 1.2rem;
-}
-
-.projects .project-row:hover .hint{
-  opacity: 0.6;
-}
-
-.projects .project-row.open .hint{
-  display: none;
-}
-
-/* Description */
+/* Description visible by default */
 .projects .project-description{
-  display: none;
-  margin-top: 0.6rem;
+  display: block;
+  margin-top: 0.7rem;
 }
 
-.projects .project-row.open .project-description{
-  display: block;
+/* If user collapses manually */
+.projects .project-row:not(.open) .project-description{
+  display: none;
 }
 
 /* =============================
@@ -117,17 +89,11 @@
 ============================= */
 
 .projects .project-icon{
-  width: 96px;
-  height: 96px;
-  opacity: 0.55;
+  width: 110px;
+  height: 110px;
+  opacity: 0.8;
   filter: invert(1) brightness(0.35);
   flex-shrink: 0;
-}
-
-.projects .project-row.open .project-icon{
-  width: 120px;
-  height: 120px;
-  opacity: 0.8;
 }
 
 /* =============================
