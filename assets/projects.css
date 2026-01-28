@@ -2,25 +2,9 @@
    PROJECTS PAGE ONLY
 ============================= */
 
-/* Remove the Projects title entirely */
+/* Remove Projects title */
 .projects h1{
   display: none;
-}
-
-/* =============================
-   KILL INHERITED SEPARATORS
-============================= */
-
-.projects,
-.projects .section,
-.projects h2{
-  border-top: none !important;
-  border-bottom: none !important;
-}
-
-.projects{
-  margin-top: 0;
-  padding-top: 0;
 }
 
 /* =============================
@@ -29,10 +13,9 @@
 
 .projects .section{
   margin-top: 4.5rem;
-  padding-top: 0;
 }
 
-/* Section titles: distinct anchors */
+/* Strong, distinct section headers */
 .projects .section > h2{
   text-align: center;
   font-size: 26px;
@@ -43,17 +26,16 @@
 
   margin: 0 0 3rem 0;
   padding-bottom: 0.6rem;
-
   border-bottom: 2px solid #e0e0e0;
 }
 
 /* =============================
-   PROJECT BLOCKS (STATIC)
+   PROJECT CARDS (STATIC)
 ============================= */
 
 .projects .project-row{
   display: flex;
-  align-items: center;   /* ← FIX */
+  align-items: center;
   justify-content: space-between;
   gap: 2rem;
 
@@ -61,8 +43,8 @@
   border: 1px solid #e8e8e8;
   border-radius: 12px;
 
-  padding: 1.6rem 1.8rem;
-  margin-bottom: 2.4rem;
+  padding: 1.8rem 2rem;
+  margin-bottom: 2.8rem;
 
   cursor: default;
 }
@@ -76,7 +58,6 @@
   flex: 1;
 }
 
-/* Project titles */
 .projects .project-title{
   background: none;
   border: none;
@@ -88,28 +69,27 @@
   color: #222;
 
   display: block;
-  cursor: default;
   text-align: left;
 }
 
-/* Remove interaction remnants */
+/* Always-visible description */
+.projects .project-description{
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Remove all interaction remnants */
 .projects .chevron,
 .projects .hint{
   display: none;
 }
 
-/* Description always visible */
-.projects .project-description{
-  display: block;
-  margin-top: 0.9rem;
-}
-
 /* =============================
-   ICONS (FIXED SIZE)
+   ICONS (DESKTOP)
 ============================= */
 
 .projects .project-icon{
-  width: 200px;     /* bigger */
+  width: 200px;
   height: 200px;
   opacity: 0.9;
   filter: invert(1) brightness(0.35);
@@ -123,15 +103,15 @@
 @media (max-width: 800px){
   .projects .project-row{
     flex-direction: column;
-    align-items: center;     /* center icon + text */
+    align-items: center;
     text-align: center;
   }
 
   .projects .project-icon{
     display: block;
-    width: 140px;            /* smaller than desktop */
+    width: 140px;
     height: 140px;
-    margin-bottom: 1rem;    /* space between icon and text */
+    margin-bottom: 1.2rem;
   }
 
   .projects .project-text{
