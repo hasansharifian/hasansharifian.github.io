@@ -1,3 +1,7 @@
+/* =============================
+   ROOT VARIABLES
+============================= */
+
 :root{
   --text: #222;
   --muted: #666;
@@ -7,6 +11,10 @@
   --card: #f7f7f7;
   --max: 980px;
 }
+
+/* =============================
+   GLOBAL RESET & TYPOGRAPHY
+============================= */
 
 *{
   box-sizing: border-box;
@@ -31,16 +39,23 @@ a:hover{
   text-decoration: underline;
 }
 
+/* =============================
+   LAYOUT
+============================= */
+
 .container{
   max-width: var(--max);
   margin: 0 auto;
   padding: 26px 18px;
 }
 
-/* NAV */
+/* =============================
+   NAVIGATION
+============================= */
 
 .nav{
   display: flex;
+  align-items: center;
   padding: 10px 0 20px 0;
   border-bottom: 1px solid var(--border);
   margin-bottom: 26px;
@@ -61,11 +76,46 @@ a:hover{
   color: var(--text);
 }
 
-/* HEADINGS (GLOBAL) */
+/* =============================
+   HERO (HOMEPAGE)
+============================= */
+
+.hero{
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.hero-text{
+  background: #fafafa;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.hero-image{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photo{
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* =============================
+   HEADINGS & TEXT
+============================= */
 
 h1{
   font-size: 32px;
-  margin-bottom: 12px;
+  line-height: 1.25;
+  margin: 0 0 12px 0;
+  font-weight: 700;
 }
 
 h2{
@@ -75,12 +125,28 @@ h2{
 }
 
 p{
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
+}
+
+.muted{
+  color: var(--muted);
+}
+
+/* =============================
+   SECTIONS (GLOBAL)
+============================= */
+
+.section{
+  margin-top: 2rem;
 }
 
 /* =============================
    PROJECTS PAGE ONLY
 ============================= */
+
+.projects .section{
+  margin-top: 4rem;
+}
 
 .projects h2{
   margin-top: 3rem;
@@ -91,7 +157,9 @@ p{
   letter-spacing: 0.02em;
 }
 
-/* PROJECT ROWS (SCOPED) */
+/* =============================
+   PROJECT ROWS (SCOPED)
+============================= */
 
 .projects .project-row{
   display: flex;
@@ -195,9 +263,19 @@ p{
   flex-shrink: 0;
 }
 
-/* RESPONSIVE (PROJECTS ONLY) */
+/* =============================
+   RESPONSIVE
+============================= */
 
 @media (max-width: 800px){
+  .hero{
+    grid-template-columns: 1fr;
+  }
+
+  .photo{
+    max-width: 260px;
+  }
+
   .projects .project-row{
     flex-direction: column;
   }
@@ -207,7 +285,9 @@ p{
   }
 }
 
-/* FOOTER */
+/* =============================
+   FOOTER
+============================= */
 
 .footer{
   margin-top: 3rem;
