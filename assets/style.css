@@ -173,7 +173,13 @@ main{
   padding-bottom: 2.5rem;
 }
 
+
 @media (max-width: 800px){
+  .hero{
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
   .hero-image{
     justify-content: center;
   }
