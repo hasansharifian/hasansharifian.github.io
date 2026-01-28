@@ -1,0 +1,148 @@
+/* =============================
+   PROJECTS PAGE ONLY
+============================= */
+
+.projects h1{
+  margin-bottom: 1.2rem;
+}
+
+/* Section headers: compact labels */
+.projects h2{
+  font-size: 17px;
+  font-weight: 600;
+  margin: 1.6rem 0 0.4rem 0;
+  color: #333;
+}
+
+/* =============================
+   PROJECT LIST
+   Collapsed = cheap
+   Expanded = expensive
+============================= */
+
+.projects .project-row{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+
+  background: #f4f4f4;
+  border-radius: 6px;
+
+  padding: 0.25rem 0.7rem;
+  margin-bottom: 0.25rem;
+
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    padding 0.15s ease,
+    border 0.15s ease;
+}
+
+.projects .project-row:hover{
+  background: #ececec;
+}
+
+/* Expanded state */
+.projects .project-row.open{
+  padding: 1.2rem 1.3rem;
+  margin-bottom: 0.9rem;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+}
+
+/* =============================
+   TEXT
+============================= */
+
+.projects .project-text{
+  max-width: 65ch;
+  flex: 1;
+  min-width: 0;
+}
+
+.projects .project-title{
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: inherit;
+  text-align: left;
+}
+
+/* Chevron */
+.projects .chevron::before{
+  content: "▸";
+  font-size: 0.85em;
+  color: #666;
+  transition: transform 0.15s ease;
+}
+
+.projects .project-row.open .chevron::before{
+  transform: rotate(90deg);
+}
+
+/* Hint */
+.projects .hint{
+  display: block;
+  font-size: 0.68rem;
+  color: #666;
+  opacity: 0;
+  margin-left: 1.2rem;
+}
+
+.projects .project-row:hover .hint{
+  opacity: 0.6;
+}
+
+.projects .project-row.open .hint{
+  display: none;
+}
+
+/* Description */
+.projects .project-description{
+  display: none;
+  margin-top: 0.6rem;
+}
+
+.projects .project-row.open .project-description{
+  display: block;
+}
+
+/* =============================
+   ICONS
+============================= */
+
+/* Cheap when collapsed */
+.projects .project-icon{
+  width: 96px;
+  height: 96px;
+  opacity: 0.55;
+  filter: invert(1) brightness(0.35);
+  flex-shrink: 0;
+}
+
+/* Expensive when expanded */
+.projects .project-row.open .project-icon{
+  width: 120px;
+  height: 120px;
+  opacity: 0.8;
+}
+
+/* =============================
+   MOBILE
+============================= */
+
+@media (max-width: 800px){
+  .projects .project-row{
+    flex-direction: column;
+  }
+
+  .projects .project-icon{
+    display: none;
+  }
+}
