@@ -1,7 +1,3 @@
-/* =============================
-   ROOT VARIABLES
-============================= */
-
 :root{
   --text: #222;
   --muted: #666;
@@ -10,10 +6,6 @@
   --border: #e8e8e8;
   --max: 980px;
 }
-
-/* =============================
-   GLOBAL RESET & TYPOGRAPHY
-============================= */
 
 *{
   box-sizing: border-box;
@@ -38,23 +30,16 @@ a:hover{
   text-decoration: underline;
 }
 
-/* =============================
-   LAYOUT
-============================= */
-
 .container{
   max-width: var(--max);
   margin: 0 auto;
   padding: 26px 18px;
 }
 
-/* =============================
-   NAVIGATION
-============================= */
+/* NAV */
 
 .nav{
   display: flex;
-  align-items: center;
   padding: 10px 0 20px 0;
   border-bottom: 1px solid var(--border);
   margin-bottom: 26px;
@@ -75,79 +60,15 @@ a:hover{
   color: var(--text);
 }
 
-/* =============================
-   HERO
-============================= */
-
-.hero{
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
-  gap: 40px;
-  align-items: start;
-  margin-bottom: 28px;
-}
-
-.hero-text{
-  background: #fafafa;
-  padding: 14px 16px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-}
-
-.hero-image{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.photo{
-  width: 100%;
-  max-width: 380px;
-  border-radius: 10px;
-  display: block;
-}
-
-/* =============================
-   HEADINGS & TEXT
-============================= */
+/* HEADINGS */
 
 h1{
   font-size: 32px;
-  line-height: 1.25;
-  margin: 0 0 12px 0;
-  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 h2{
   font-size: 21px;
-  margin: 26px 0 10px 0;
-  font-weight: 700;
-}
-
-p{
-  margin: 0 0 12px 0;
-}
-
-.muted{
-  color: var(--muted);
-}
-
-/* =============================
-   SECTIONS
-============================= */
-
-.section{
-  margin-top: 2rem;
-}
-
-/* =============================
-   PROJECTS PAGE
-============================= */
-
-.projects .section{
-  margin-top: 4rem;
-}
-
-.projects h2{
   margin-top: 3.5rem;
   margin-bottom: 1.5rem;
   padding-top: 2.5rem;
@@ -156,34 +77,40 @@ p{
   letter-spacing: 0.02em;
 }
 
-.projects p{
-  max-width: 65ch;
+p{
+  margin-bottom: 12px;
 }
 
-/* =============================
-   PROJECT ROWS (FINAL)
-============================= */
+/* PROJECT CARDS */
 
 .project-row{
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
-  margin-bottom: 3rem;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.6rem;
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.project-row.clickable{
+  cursor: pointer;
+}
+
+.project-row.clickable:hover{
+  background: #f4f4f4;
+  border-color: #dcdcdc;
+}
+
+.project.open{
+  background: #fff;
+  border-color: #cfcfcf;
 }
 
 .project-text{
   max-width: 65ch;
   flex: 1;
-  min-width: 0;
-}
-
-.project-icon{
-  width: 200px;
-  height: 200px;
-  opacity: 0.95;
-  filter: invert(1) brightness(0.25);
-  flex-shrink: 0;
 }
 
 .project-title{
@@ -192,26 +119,28 @@ p{
   padding: 0;
   font: inherit;
   font-weight: 600;
-  cursor: pointer;
+  cursor: inherit;
   text-align: left;
-}
-
-.project-title:hover{
-  text-decoration: underline;
 }
 
 .project-description{
   display: none;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
 }
 
 .project.open .project-description{
   display: block;
 }
 
-/* =============================
-   RESPONSIVE
-============================= */
+.project-icon{
+  width: 180px;
+  height: 180px;
+  opacity: 0.9;
+  filter: invert(1) brightness(0.25);
+  flex-shrink: 0;
+}
+
+/* RESPONSIVE */
 
 @media (max-width: 800px){
   .project-row{
@@ -221,19 +150,9 @@ p{
   .project-icon{
     display: none;
   }
-
-  .hero{
-    grid-template-columns: 1fr;
-  }
-
-  .photo{
-    max-width: 260px;
-  }
 }
 
-/* =============================
-   FOOTER
-============================= */
+/* FOOTER */
 
 .footer{
   margin-top: 3rem;
