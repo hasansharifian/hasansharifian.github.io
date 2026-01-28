@@ -2,7 +2,7 @@
    PROJECTS PAGE ONLY
 ============================= */
 
-/* Remove the Projects page title */
+/* Remove the big "Projects" title */
 .projects h1{
   display: none;
 }
@@ -11,47 +11,40 @@
    SECTIONS
 ============================= */
 
-/* Kill any inherited top separators or borders */
+/* Stronger section separation */
 .projects .section{
-  margin-top: 2.5rem;
+  margin-top: 4rem;      /* BIG gap between sections */
   padding-top: 0;
   border-top: none;
 }
 
-/* Bigger, stronger category headers */
+/* Larger, clearer section headers */
 .projects .section > h2{
   text-align: center;
-  font-size: 22px;      /* bigger */
+  font-size: 24px;       /* noticeably bigger */
   font-weight: 700;
-  margin: 0 0 1.6rem 0; /* space below header */
-  padding: 0;
-  border: none;         /* removes separator */
+  margin: 0 0 2.5rem 0;  /* BIG gap before first project */
   color: #222;
 }
 
 /* =============================
-   PROJECT CARDS (OPEN BY DEFAULT)
+   PROJECT BLOCKS (STATIC)
 ============================= */
 
 .projects .project-row{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1.4rem;
+  gap: 1.6rem;
 
   background: #fafafa;
   border: 1px solid #e8e8e8;
-  border-radius: 10px;
+  border-radius: 12px;
 
-  padding: 1.3rem 1.5rem;
-  margin-bottom: 1.6rem;   /* MORE space between projects */
+  padding: 1.6rem 1.8rem;
+  margin-bottom: 2.2rem;   /* BIG space between projects */
 
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-
-.projects .project-row:hover{
-  background: #f3f3f3;
+  cursor: default;         /* no affordance */
 }
 
 /* =============================
@@ -64,34 +57,35 @@
   min-width: 0;
 }
 
+/* Project titles are now real headings */
 .projects .project-title{
   background: none;
   border: none;
   padding: 0;
   font: inherit;
 
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
 
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-
-  cursor: inherit;
+  display: block;
+  cursor: default;
   text-align: left;
 }
 
-/* Chevron */
-.projects .chevron::before{
-  content: "▾";
-  font-size: 0.9em;
-  color: #666;
+/* Remove chevron completely */
+.projects .chevron{
+  display: none;
 }
 
-/* Description always visible (open by default) */
+/* Remove hint completely */
+.projects .hint{
+  display: none;
+}
+
+/* Description always visible */
 .projects .project-description{
   display: block;
-  margin-top: 0.8rem;
+  margin-top: 0.9rem;
 }
 
 /* =============================
@@ -101,7 +95,7 @@
 .projects .project-icon{
   width: 120px;
   height: 120px;
-  opacity: 0.8;
+  opacity: 0.75;
   filter: invert(1) brightness(0.35);
   flex-shrink: 0;
 }
