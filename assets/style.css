@@ -70,8 +70,8 @@ h1{
 h2{
   font-size: 21px;
   margin-top: 3.5rem;
-  margin-bottom: 1.5rem;
-  padding-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  padding-top: 2.2rem;
   border-top: 1px solid var(--border);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -81,17 +81,19 @@ p{
   margin-bottom: 12px;
 }
 
-/* PROJECT CARDS */
+/* PROJECT LIST → EXPANDABLE CARDS */
 
 .project-row{
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 1.2rem 1.4rem;
-  margin-bottom: 1.6rem;
-  background: #fafafa;
-  border: 1px solid var(--border);
+  align-items: flex-start;
+  gap: 1.5rem;
+
+  padding: 0.35rem 0;
+  margin-bottom: 0.6rem;
+
   border-radius: 10px;
+  transition: background 0.15s ease, padding 0.15s ease;
 }
 
 .project-row.clickable{
@@ -99,14 +101,19 @@ p{
 }
 
 .project-row.clickable:hover{
-  background: #f4f4f4;
-  border-color: #dcdcdc;
+  background: #f6f6f6;
 }
 
-.project.open{
-  background: #fff;
-  border-color: #cfcfcf;
+/* EXPANDED STATE */
+
+.project-row.open{
+  background: #fafafa;
+  border: 1px solid var(--border);
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 1.2rem;
 }
+
+/* TEXT */
 
 .project-text{
   max-width: 65ch;
@@ -123,19 +130,23 @@ p{
   text-align: left;
 }
 
+/* DESCRIPTION */
+
 .project-description{
   display: none;
   margin-top: 0.6rem;
 }
 
-.project.open .project-description{
+.project-row.open .project-description{
   display: block;
 }
 
+/* ICON */
+
 .project-icon{
-  width: 180px;
-  height: 180px;
-  opacity: 0.9;
+  width: 150px;
+  height: 150px;
+  opacity: 0.85;
   filter: invert(1) brightness(0.25);
   flex-shrink: 0;
 }
