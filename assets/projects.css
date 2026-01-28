@@ -53,7 +53,7 @@
 
 .projects .project-row{
   display: flex;
-  align-items: flex-start;
+  align-items: center;   /* ← FIX */
   justify-content: space-between;
   gap: 2rem;
 
