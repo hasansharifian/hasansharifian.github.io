@@ -317,3 +317,10 @@ main{
   display: block;
 }
 
+.project-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
