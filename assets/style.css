@@ -4,6 +4,7 @@
   --link: #1a73e8;
   --bg: #fff;
   --border: #e8e8e8;
+  --card: #f7f7f7;
   --max: 980px;
 }
 
@@ -69,7 +70,7 @@ h1{
 
 h2{
   font-size: 21px;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   margin-bottom: 1.2rem;
   padding-top: 2.2rem;
   border-top: 1px solid var(--border);
@@ -81,18 +82,20 @@ p{
   margin-bottom: 12px;
 }
 
-/* PROJECT LIST → EXPANDABLE CARDS */
+/* PROJECT ROWS */
 
 .project-row{
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 1.5rem;
 
-  padding: 0.35rem 0;
-  margin-bottom: 0.6rem;
-
+  background: var(--card);
   border-radius: 10px;
+
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.7rem;
+
   transition: background 0.15s ease, padding 0.15s ease;
 }
 
@@ -101,15 +104,13 @@ p{
 }
 
 .project-row.clickable:hover{
-  background: #f6f6f6;
+  background: #ededed;
 }
 
 /* EXPANDED STATE */
 
 .project-row.open{
-  background: #fafafa;
-  border: 1px solid var(--border);
-  padding: 1.1rem 1.3rem;
+  padding: 1.2rem 1.4rem;
   margin-bottom: 1.2rem;
 }
 
@@ -144,8 +145,8 @@ p{
 /* ICON */
 
 .project-icon{
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   opacity: 0.85;
   filter: invert(1) brightness(0.25);
   flex-shrink: 0;
