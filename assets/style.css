@@ -9,9 +9,6 @@
   --bg: #fff;
   --border: #e8e8e8;
   --max: 980px;
-
-  /* Projects-only surface tone */
-  --card: #f4f4f4;
 }
 
 /* =============================
@@ -110,7 +107,7 @@ a:hover{
 }
 
 /* =============================
-   HEADINGS & TEXT (GLOBAL)
+   HEADINGS & TEXT
 ============================= */
 
 h1{
@@ -147,135 +144,6 @@ p{
 .section{
   margin-top: 2rem;
 }
-
-/* =============================
-   PROJECTS PAGE ONLY
-============================= */
-
-/* keep your projects page section spacing, but less aggressive */
-.projects .section{
-  margin-top: 3rem;
-}
-
-/* section headers on Projects: label-like, not chapter break */
-.projects h2{
-  font-size: 17px;
-  font-weight: 600;
-  margin: 1.6rem 0 0.4rem 0;
-  padding-top: 1.2rem;
-  border-top: 1px solid var(--border);
-  color: #333;
-  letter-spacing: 0.01em;
-}
-
-/* =============================
-   PROJECT LIST (SCOPED)
-   Collapsed = cheap list item
-   Open = expensive card
-============================= */
-
-.projects .project-row{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-
-  background: var(--card);
-  border-radius: 6px;
-
-  padding: 0.25rem 0.7rem;
-  margin-bottom: 0.25rem;
-
-  cursor: pointer;
-  transition: background 0.15s ease, padding 0.15s ease, border 0.15s ease;
-}
-
-.projects .project-row:hover{
-  background: #ececec;
-}
-
-.projects .project-row.open{
-  padding: 1.2rem 1.3rem;
-  margin-bottom: 0.9rem;
-  background: #fafafa;
-  border: 1px solid var(--border);
-}
-
-.projects .project-text{
-  max-width: 65ch;
-  flex: 1;
-  min-width: 0;
-}
-
-.projects .project-title{
-  background: none;
-  border: none;
-  padding: 0;
-  font: inherit;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  cursor: inherit;
-  text-align: left;
-}
-
-/* CHEVRON */
-.projects .chevron::before{
-  content: "▸";
-  font-size: 0.85em;
-  color: var(--muted);
-  transition: transform 0.15s ease;
-}
-
-.projects .project-row.open .chevron::before{
-  transform: rotate(90deg);
-}
-
-/* HINT */
-.projects .hint{
-  display: block;
-  font-size: 0.68rem;
-  color: var(--muted);
-  opacity: 0;
-  margin-left: 1.2rem;
-}
-
-.projects .project-row:hover .hint{
-  opacity: 0.6;
-}
-
-.projects .project-row.open .hint{
-  display: none;
-}
-
-/* DESCRIPTION */
-.projects .project-description{
-  display: none;
-  margin-top: 0.6rem;
-}
-
-.projects .project-row.open .project-description{
-  display: block;
-}
-
-/* ICONS */
-.projects .project-icon{
-  width: 96px;
-  height: 96px;
-  opacity: 0.55;
-  filter: invert(1) brightness(0.35);
-  flex-shrink: 0;
-}
-
-.projects .project-row.open .project-icon{
-  width: 120px;
-  height: 120px;
-  opacity: 0.8;
-}
-
-
-
 
 /* =============================
    FOOTER
