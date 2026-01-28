@@ -8,10 +8,9 @@
 }
 
 /* =============================
-   KILL ALL INHERITED SEPARATORS
+   KILL INHERITED SEPARATORS
 ============================= */
 
-/* Neutralize any borders/margins coming from global styles */
 .projects,
 .projects .section,
 .projects h2{
@@ -19,7 +18,6 @@
   border-bottom: none !important;
 }
 
-/* Pull content up so no ghost line remains */
 .projects{
   margin-top: 0;
   padding-top: 0;
@@ -29,27 +27,24 @@
    SECTIONS
 ============================= */
 
-/* Big separation between sections */
 .projects .section{
   margin-top: 4.5rem;
   padding-top: 0;
 }
 
-/* SECTION TITLES — MAKE THEM DISTINCT */
+/* Section titles: distinct anchors */
 .projects .section > h2{
   text-align: center;
-
-  font-size: 26px;              /* clearly bigger than project titles */
+  font-size: 26px;
   font-weight: 700;
-  letter-spacing: 0.04em;       /* subtle authority */
-  text-transform: uppercase;   /* categorical feel */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #111;
 
-  color: #111;                  /* darker than body text */
-
-  margin: 0 0 3rem 0;           /* strong separation from projects */
+  margin: 0 0 3rem 0;
   padding-bottom: 0.6rem;
 
-  border-bottom: 2px solid #e0e0e0; /* intentional divider */
+  border-bottom: 2px solid #e0e0e0;
 }
 
 /* =============================
@@ -60,14 +55,14 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1.6rem;
+  gap: 2rem;
 
   background: #fafafa;
   border: 1px solid #e8e8e8;
   border-radius: 12px;
 
   padding: 1.6rem 1.8rem;
-  margin-bottom: 2.4rem;        /* CLEAR space between projects */
+  margin-bottom: 2.4rem;
 
   cursor: default;
 }
@@ -81,7 +76,7 @@
   flex: 1;
 }
 
-/* Project titles remain subordinate */
+/* Project titles */
 .projects .project-title{
   background: none;
   border: none;
@@ -97,26 +92,26 @@
   text-align: left;
 }
 
-/* No chevrons, no hints */
+/* Remove interaction remnants */
 .projects .chevron,
 .projects .hint{
   display: none;
 }
 
-/* Descriptions always visible */
+/* Description always visible */
 .projects .project-description{
   display: block;
   margin-top: 0.9rem;
 }
 
 /* =============================
-   ICONS
+   ICONS (FIXED SIZE)
 ============================= */
 
 .projects .project-icon{
-  width: 120px;
-  height: 120px;
-  opacity: 0.75;
+  width: 160px;          /* BIGGER */
+  height: 160px;
+  opacity: 0.85;
   filter: invert(1) brightness(0.35);
   flex-shrink: 0;
 }
