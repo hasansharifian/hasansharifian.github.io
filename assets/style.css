@@ -303,3 +303,17 @@ main{
   min-width: 0;
 }
 
+
+.project-icon {
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.project-description {
+  display: none;
+}
+
+.project.open .project-description {
+  display: block;
+}
+
