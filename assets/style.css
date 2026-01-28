@@ -181,20 +181,26 @@ p{
   max-width: 65ch;
 }
 
-.project-icon{
-  position: absolute;
-  top: 2.2rem;
-  right: 0;
-
-  width: 200px;
-  height: 200px;
-
-  opacity: 0.95;
-
-  /* render white outline icons as dark gray */
-  filter: invert(1) brightness(0.25);
+.project-row{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
+.project-text{
+  max-width: 65ch;
+  flex: 1;
+}
+
+.project-icon{
+  width: 200px;
+  height: 200px;
+  opacity: 0.95;
+  filter: invert(1) brightness(0.25);
+  flex-shrink: 0;
+}
 
 /* =============================
    RESPONSIVE
