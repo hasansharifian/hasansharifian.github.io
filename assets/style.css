@@ -172,3 +172,13 @@ p{
 main{
   padding-bottom: 2.5rem;
 }
+
+@media (max-width: 800px){
+  .hero-image{
+    justify-content: center;
+  }
+
+  .photo{
+    max-width: 100%;
+  }
+}
