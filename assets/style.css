@@ -274,23 +274,7 @@ p{
   opacity: 0.8;
 }
 
-/* =============================
-   RESPONSIVE (GLOBAL + PROJECTS)
-============================= */
 
-@media (max-width: 800px){
-  .projects .project-row{
-    flex-direction: column;
-  }
-
-  .projects .project-icon{
-    display: none;
-  }
-
-  .projects .section > h2{
-    text-align: left;
-  }
-}
 
 
 /* =============================
