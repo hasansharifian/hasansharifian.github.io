@@ -61,7 +61,7 @@ a:hover{
   color: var(--text);
 }
 
-/* HEADINGS */
+/* HEADINGS (GLOBAL) */
 
 h1{
   font-size: 32px;
@@ -70,6 +70,19 @@ h1{
 
 h2{
   font-size: 21px;
+  margin: 26px 0 10px 0;
+  font-weight: 700;
+}
+
+p{
+  margin-bottom: 12px;
+}
+
+/* =============================
+   PROJECTS PAGE ONLY
+============================= */
+
+.projects h2{
   margin-top: 3rem;
   margin-bottom: 1.2rem;
   padding-top: 2.2rem;
@@ -78,13 +91,9 @@ h2{
   letter-spacing: 0.02em;
 }
 
-p{
-  margin-bottom: 12px;
-}
+/* PROJECT ROWS (SCOPED) */
 
-/* PROJECT ROWS */
-
-.project-row{
+.projects .project-row{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -99,29 +108,27 @@ p{
   transition: background 0.15s ease, padding 0.15s ease;
 }
 
-.project-row.clickable{
+.projects .project-row.clickable{
   cursor: pointer;
 }
 
-.project-row.clickable:hover{
+.projects .project-row.clickable:hover{
   background: #ededed;
 }
 
-/* EXPANDED STATE */
-
-.project-row.open{
+.projects .project-row.open{
   padding: 1.2rem 1.4rem;
   margin-bottom: 1.2rem;
 }
 
 /* TEXT */
 
-.project-text{
+.projects .project-text{
   max-width: 65ch;
   flex: 1;
 }
 
-.project-title{
+.projects .project-title{
   background: none;
   border: none;
   padding: 0;
@@ -129,22 +136,58 @@ p{
   font-weight: 600;
   cursor: inherit;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* CHEVRON */
+
+.projects .chevron::before{
+  content: "▸";
+  display: inline-block;
+  font-size: 0.9em;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+}
+
+.projects .project-row.open .chevron::before{
+  transform: rotate(90deg);
+}
+
+/* HINT */
+
+.projects .hint{
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0;
+  margin-top: 0.1rem;
+  transition: opacity 0.15s ease;
+}
+
+.projects .project-row:hover .hint{
+  opacity: 0.7;
+}
+
+.projects .project-row.open .hint{
+  display: none;
 }
 
 /* DESCRIPTION */
 
-.project-description{
+.projects .project-description{
   display: none;
   margin-top: 0.6rem;
 }
 
-.project-row.open .project-description{
+.projects .project-row.open .project-description{
   display: block;
 }
 
 /* ICON */
 
-.project-icon{
+.projects .project-icon{
   width: 140px;
   height: 140px;
   opacity: 0.85;
@@ -152,14 +195,14 @@ p{
   flex-shrink: 0;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE (PROJECTS ONLY) */
 
 @media (max-width: 800px){
-  .project-row{
+  .projects .project-row{
     flex-direction: column;
   }
 
-  .project-icon{
+  .projects .project-icon{
     display: none;
   }
 }
