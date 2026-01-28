@@ -109,9 +109,9 @@
 ============================= */
 
 .projects .project-icon{
-  width: 160px;          /* BIGGER */
-  height: 160px;
-  opacity: 0.85;
+  width: 200px;     /* bigger */
+  height: 200px;
+  opacity: 0.9;
   filter: invert(1) brightness(0.35);
   flex-shrink: 0;
 }
