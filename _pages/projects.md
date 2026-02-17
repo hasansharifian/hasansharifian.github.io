@@ -58,30 +58,30 @@ nav_order: 2
     width: 140px;
     height: 140px;
     border-radius: 20px;
-    background: var(--global-code-bg-color, #f0f0f0);
-    border: 1px solid var(--global-divider-color, #e0e0e0);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    /* Dark background in light mode so dark PNGs are visible */
+    background: #2a2a2a;
+  }
+
+  /* In dark mode, use a slightly lighter surface so icons still contrast */
+  html[data-theme="dark"] .project-icon-wrap,
+  [data-bs-theme="dark"] .project-icon-wrap {
+    background: #3a3a3a;
+    border: 1px solid rgba(255,255,255,0.08);
   }
 
   .project-entry:hover .project-icon-wrap {
     transform: scale(1.04);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   }
 
   .project-visual img {
     width: 100px;
     height: 100px;
     object-fit: contain;
-    mix-blend-mode: multiply;
-  }
-
-  html[data-theme="dark"] .project-visual img,
-  [data-bs-theme="dark"] .project-visual img {
-    mix-blend-mode: normal;
-    filter: brightness(1.1);
   }
 
   @media (max-width: 600px) {
