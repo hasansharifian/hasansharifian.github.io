@@ -28,10 +28,10 @@ nav_order: 1
   </div>
 
   <div class="hero-image">
-    <img
-      src="/photo.jpg"
-      alt="MohammadHasan (Hasan) Sharifian"
-      style="max-width:250px;"
-    />
+<img
+  src="/assets/img/photo.jpg"
+  alt="MohammadHasan (Hasan) Sharifian"
+  style="max-width:250px;"
+/>
   </div>
 </div>
