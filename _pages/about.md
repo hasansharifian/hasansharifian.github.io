@@ -16,21 +16,8 @@ social: false
 ---
 *PhD Candidate in Social Psychology, University of Michigan*
 
-I'm Hasan, a PhD candidate in social psychology at the University of Michigan. My research broadly examines the interaction between culture and group processes.
+I'm Hasan, a PhD candidate in social psychology at the University of Michigan. My research sits at the intersection of cultural psychology and intergroup relations.
 
-In cultural psychology, I study cognitive styles, emotion expression, and self-enhancement motivation using cross-cultural comparisons, including Middle Eastern, Western, and East Asian samples.
+In cultural psychology, I study cognitive styles, emotion expression, and honor values through cross-cultural comparisons. A central focus of my work is bringing underrepresented cultures — particularly those in the Middle East and North Africa (MENA) — into mainstream psychological research, using both online and in-person samples collected through collaborations with regional partners.
 
-In group processes and intergroup relations, I examine how cultural values such as honor and interdependence interact with broader sociopolitical values to shape intergroup cooperation and conflict across levels of analysis.
-
-<style>
-  .profile {
-    max-width: 200px !important;
-  }
-
-  .profile img {
-    max-height: 260px !important;
-    width: 100% !important;
-    object-fit: cover;
-    object-position: top;
-  }
-</style>
+In intergroup relations, I examine the motivational foundations of conflict and cooperation. I study how cultural values such as honor and interdependence interact with broader ideological orientations — including Right-Wing Authoritarianism and Social Dominance Orientation — and moral decision strategies to shape how individuals and groups navigate conflict. I approach these questions across levels of analysis: at the individual level, I treat cultural values as personal dispositions that influence intergroup attitudes and policy preferences; at the societal level, I examine how values differentiate cultures and structure their international relations.
