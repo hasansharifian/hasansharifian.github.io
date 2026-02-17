@@ -55,8 +55,8 @@ nav_order: 2
   }
 
   .project-visual img {
-    width: 480px;
-    height: 480px;
+    width: 280px;
+    height: 280px;
     object-fit: contain;
     /* Invert dark icons for light mode so they become light and visible */
     filter: invert(1);
@@ -122,3 +122,38 @@ nav_order: 2
   </div>
 
 </div>
+
+<div class="contact-footer">
+  <div>Department of Psychology, University of Michigan</div>
+  <div>
+    <a href="https://maps.google.com/?q=530+Church+Street,+Ann+Arbor,+MI+48109" target="_blank" rel="noopener">
+      530 Church Street, Ann Arbor, MI 48109
+    </a>
+  </div>
+  <div>
+    <a href="mailto:sharifih@umich.edu">sharifih@umich.edu</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:hasan_sharifian@yahoo.com">hasan_sharifian@yahoo.com</a>
+  </div>
+</div>
+
+<style>
+  .contact-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color, #e8e8e8);
+    font-size: 0.9rem;
+    line-height: 2;
+    color: var(--global-text-color-light, #888);
+    text-align: center;
+  }
+
+  .contact-footer a {
+    color: var(--global-text-color-light, #888);
+    text-decoration: none;
+  }
+
+  .contact-footer a:hover {
+    color: var(--global-theme-color);
+  }
+</style>
