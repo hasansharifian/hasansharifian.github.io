@@ -12,11 +12,24 @@ nav_order: 3
       <i class="fa-solid fa-download"></i> Download PDF
     </a>
   </div>
-  <iframe
-    src="{{ '/assets/pdf/2025.12-CV.pdf' | relative_url }}"
-    class="cv-frame"
-    title="Curriculum Vitae">
-  </iframe>
+
+  <!-- Desktop: native iframe -->
+  <div class="cv-desktop">
+    <iframe
+      src="{{ '/assets/pdf/2025.12-CV.pdf' | relative_url }}"
+      class="cv-frame"
+      title="Curriculum Vitae">
+    </iframe>
+  </div>
+
+  <!-- Mobile: Google Docs viewer which works on all devices -->
+  <div class="cv-mobile">
+    <iframe
+      src="https://docs.google.com/viewer?url={{ site.url }}/assets/pdf/2025.12-CV.pdf&embedded=true"
+      class="cv-frame"
+      title="Curriculum Vitae">
+    </iframe>
+  </div>
 </div>
 
 <style>
@@ -52,9 +65,19 @@ nav_order: 3
     border-radius: 4px;
   }
 
-  @media (max-width: 600px) {
+  .cv-mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .cv-desktop {
+      display: none;
+    }
+    .cv-mobile {
+      display: block;
+    }
     .cv-frame {
-      height: 70vh;
+      height: 75vh;
     }
   }
 </style>
