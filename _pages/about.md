@@ -1,10 +1,15 @@
 ---
-layout: page
+layout: about
 title: Home
 permalink: /
 nav: true
 nav_order: 1
+profile:
+  align: right
+  image: photo.jpg
+  image_circular: false
 ---
+
 
 <div class="hero">
   <div class="hero-text">
