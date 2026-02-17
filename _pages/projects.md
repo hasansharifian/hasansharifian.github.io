@@ -55,8 +55,8 @@ nav_order: 2
   }
 
   .project-visual img {
-    width: 120px;
-    height: 120px;
+    width: 480px;
+    height: 480px;
     object-fit: contain;
     /* Invert dark icons for light mode so they become light and visible */
     filter: invert(1);
