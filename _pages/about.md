@@ -12,8 +12,6 @@ profile:
 
 
 
-# MohammadHasan Sharifian
-
 *PhD Candidate in Social Psychology, University of Michigan*
 
 I’m Hasan, a PhD candidate in social psychology at the University of Michigan.
