@@ -6,80 +6,32 @@ nav: true
 nav_order: 1
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="google-site-verification" content="-2sxg43Ivhb4WqS8uNkAtPx3XMKC38_HASAhxxRcceU" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="MohammadHasan Sharifian is a PhD candidate in social psychology at the University of Michigan, studying culture, honor, intergroup conflict, and political behavior.">
+<div class="hero">
+  <div class="hero-text">
+    <h1>MohammadHasan Sharifian</h1>
+    <p><em>PhD Candidate in Social Psychology, University of Michigan</em></p>
 
-  <title>MohammadHasan (Hasan) Sharifian</title>
+    <p>
+      I’m Hasan, a PhD candidate in social psychology at the University of Michigan.
+      My research broadly examines the interaction between culture and group processes.
+    </p>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <p>
+      In cultural psychology, I study cognitive styles, emotion expression, and self-enhancement motivation using
+      cross-cultural comparisons, including Middle Eastern, Western, and East Asian samples.
+    </p>
 
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
-
-<body>
-  <div class="container">
-
-    <nav class="nav">
-      <p>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
-      </p>
-    </nav>
-
-    <main class="hero">
-      <div class="hero-text">
-        <h1>MohammadHasan Sharifian</h1>
-        <p class="muted">PhD Candidate in Social Psychology, University of Michigan</p>
-
-        <p>
-          I’m Hasan, a PhD candidate in social psychology at the University of Michigan.
-          My research broadly examines the interaction between culture and group processes.
-        </p>
-
-        <p>
-          In cultural psychology, I study cognitive styles, emotion expression, and self-enhancement motivation using
-          cross-cultural comparisons, including Middle Eastern, Western, and East Asian samples.
-        </p>
-
-        <p>
-          In group processes and intergroup relations, I examine how cultural values such as honor and interdependence
-          interact with broader sociopolitical values to shape intergroup cooperation and conflict across levels of analysis.
-        </p>
-      </div>
-
-      <div class="hero-image">
-        <img
-          class="photo"
-          src="/photo.jpg"
-          alt="MohammadHasan (Hasan) Sharifian"
-        />
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-lines">
-        <div>Department of Psychology, University of Michigan</div>
-        <div>
-          <a href="https://maps.google.com/?q=530+Church+Street,+Ann+Arbor,+MI+48109" target="_blank" rel="noopener">
-            East Hall, 530 Church Street, Ann Arbor, MI 48109
-          </a>
-        </div>
-        <div>
-          <a href="mailto:sharifih@umich.edu">sharifih@umich.edu</a><br>
-          <a href="mailto:hasan_sharifian@yahoo.com">hasan_sharifian@yahoo.com</a>
-        </div>
-      </div>
-    </footer>
-
+    <p>
+      In group processes and intergroup relations, I examine how cultural values such as honor and interdependence
+      interact with broader sociopolitical values to shape intergroup cooperation and conflict across levels of analysis.
+    </p>
   </div>
-</body>
-</html>
+
+  <div class="hero-image">
+    <img
+      src="/photo.jpg"
+      alt="MohammadHasan (Hasan) Sharifian"
+      style="max-width:250px;"
+    />
+  </div>
+</div>
