@@ -44,6 +44,7 @@ nav_order: 2
   .project-body {
     font-size: 1rem;
     line-height: 1.85;
+    text-align: justify;
     color: var(--global-text-color);
     margin: 0;
   }
