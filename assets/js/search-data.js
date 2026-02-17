@@ -459,6 +459,11 @@ ninja.data = [{
           description: "Do analytic–holistic distinctions generalize beyond East Asian–Western comparisons?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cognitive-styles/";
+            },},{id: "projects-honor-ideology-and-prejudice",
+          title: 'Honor, Ideology, and Prejudice',
+          description: "Does honor culture uniquely predict intergroup bias beyond RWA and SDO?",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/honor-ideology-prejudice/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
