@@ -7,7 +7,7 @@ nav_order: 1
 profile:
   align: right
   image: photo.jpg
-  image_circular: false
+  image_circular: true
 ---
 
 
