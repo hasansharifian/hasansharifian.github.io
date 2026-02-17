@@ -22,7 +22,17 @@
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
-        <div class="navbar-brand social">{% social_links %}</div>
+        <div class="navbar-brand social">{% social_links %}
+
+    <style>
+      .navbar-brand.social a[href*="feed.xml"],
+      .navbar-brand.social a[href$="/feed"],
+      .navbar-brand.social a[aria-label="RSS"],
+      .navbar-brand.social a[title="RSS"] { display: none !important; }
+    </style>
+  </div>
+
+</div>
       {% endif %}
       <!-- Navbar Toggle -->
       <button
