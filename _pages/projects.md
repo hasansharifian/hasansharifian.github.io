@@ -13,7 +13,7 @@ nav_order: 2
     gap: 2.5rem;
     padding: 2.8rem 0;
     border-bottom: 1px solid var(--global-divider-color, #e8e8e8);
-    align-items: start;
+    align-items: center;
   }
 
   .project-entry:first-child {
@@ -50,22 +50,14 @@ nav_order: 2
   }
 
   .project-visual {
-    align-self: start;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  /* Only apply the offset on desktop where the image is visible */
-  @media (min-width: 601px) {
-    .project-visual {
-      margin-top: 3.2rem;
-    }
-  }
-
   .project-visual img {
-    width: 250px;
-    height: 250px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     /* Invert dark icons for light mode so they become light and visible */
     filter: invert(1);
