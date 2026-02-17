@@ -459,6 +459,11 @@ ninja.data = [{
           description: "Do analytic–holistic distinctions generalize beyond East Asian–Western comparisons?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cognitive-styles/";
+            },},{id: "projects-cultural-variation-in-conflict-strategy",
+          title: 'Cultural Variation in Conflict Strategy',
+          description: "How do power and reputation shape conflict escalation across cultures?",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cultural-conflict-strategy/";
             },},{id: "projects-honor-ideology-and-prejudice",
           title: 'Honor, Ideology, and Prejudice',
           description: "Does honor culture uniquely predict intergroup bias beyond RWA and SDO?",
