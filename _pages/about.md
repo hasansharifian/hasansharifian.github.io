@@ -7,7 +7,11 @@ nav_order: 1
 profile:
   align: right
   image: photo.jpg
-  image_circular: true
+  image_circular: false
+  news: false
+latest_posts: false
+selected_papers: false
+social: false
 ---
 
 
