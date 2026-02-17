@@ -22,16 +22,15 @@
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
-        <div class="navbar-brand social">
-          {% social_links %}
-          <style>
-            .navbar-brand.social a[href*="feed.xml"],
-            .navbar-brand.social a[href$="/feed"],
-            .navbar-brand.social a[aria-label="RSS"],
-            .navbar-brand.social a[title="RSS"] { display: none !important; }
-          </style>
-        </div>
+        <div class="navbar-brand social">{% social_links %}</div>
       {% endif %}
+      <style>
+        .navbar-brand.social a[href*="feed.xml"],
+        .navbar-brand.social a[href$="/feed"],
+        .navbar-brand.social a[aria-label="RSS"],
+        .navbar-brand.social a[title="RSS"],
+        .navbar-brand.social a i.fa-rss { display: none !important; }
+      </style>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
