@@ -13,7 +13,7 @@ nav_order: 2
     gap: 2.5rem;
     padding: 2.8rem 0;
     border-bottom: 1px solid var(--global-divider-color, #e8e8e8);
-    align-items: center;
+    align-items: start;
   }
 
   .project-entry:first-child {
@@ -42,22 +42,30 @@ nav_order: 2
   }
 
   .project-body {
+    text-align: justify;
     font-size: 1rem;
     line-height: 1.85;
-    text-align: justify;
     color: var(--global-text-color);
     margin: 0;
   }
 
   .project-visual {
+    align-self: start;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  /* Only apply the offset on desktop where the image is visible */
+  @media (min-width: 601px) {
+    .project-visual {
+      margin-top: 3.2rem;
+    }
+  }
+
   .project-visual img {
-    width: 280px;
-    height: 280px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     /* Invert dark icons for light mode so they become light and visible */
     filter: invert(1);
@@ -82,7 +90,13 @@ nav_order: 2
       grid-template-columns: 1fr;
     }
     .project-visual {
-      display: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .project-visual img {
+      width: 90px;
+      height: 90px;
     }
   }
 </style>
