@@ -87,8 +87,8 @@ nav_order: 2
       margin-top: 1.5rem;
     }
     .project-visual img {
-      width: 110px;
-      height: 110px;
+      width: 150px;
+      height: 150px;
     }
   }
 </style>
