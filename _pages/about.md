@@ -1,34 +1,85 @@
 ---
-layout: about
-title: about
+layout: page
+title: Home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+nav: true
+nav_order: 1
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="-2sxg43Ivhb4WqS8uNkAtPx3XMKC38_HASAhxxRcceU" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="MohammadHasan Sharifian is a PhD candidate in social psychology at the University of Michigan, studying culture, honor, intergroup conflict, and political behavior.">
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+  <title>MohammadHasan (Hasan) Sharifian</title>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <p>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </p>
+    </nav>
+
+    <main class="hero">
+      <div class="hero-text">
+        <h1>MohammadHasan Sharifian</h1>
+        <p class="muted">PhD Candidate in Social Psychology, University of Michigan</p>
+
+        <p>
+          I’m Hasan, a PhD candidate in social psychology at the University of Michigan.
+          My research broadly examines the interaction between culture and group processes.
+        </p>
+
+        <p>
+          In cultural psychology, I study cognitive styles, emotion expression, and self-enhancement motivation using
+          cross-cultural comparisons, including Middle Eastern, Western, and East Asian samples.
+        </p>
+
+        <p>
+          In group processes and intergroup relations, I examine how cultural values such as honor and interdependence
+          interact with broader sociopolitical values to shape intergroup cooperation and conflict across levels of analysis.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <img
+          class="photo"
+          src="/photo.jpg"
+          alt="MohammadHasan (Hasan) Sharifian"
+        />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-lines">
+        <div>Department of Psychology, University of Michigan</div>
+        <div>
+          <a href="https://maps.google.com/?q=530+Church+Street,+Ann+Arbor,+MI+48109" target="_blank" rel="noopener">
+            East Hall, 530 Church Street, Ann Arbor, MI 48109
+          </a>
+        </div>
+        <div>
+          <a href="mailto:sharifih@umich.edu">sharifih@umich.edu</a><br>
+          <a href="mailto:hasan_sharifian@yahoo.com">hasan_sharifian@yahoo.com</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
