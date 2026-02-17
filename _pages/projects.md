@@ -58,18 +58,27 @@ nav_order: 2
     padding-top: 0.25rem;
   }
 
-  .project-visual img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    opacity: 0.75;
-    filter: grayscale(15%);
-    transition: opacity 0.3s, transform 0.3s;
+  .project-icon-wrap {
+    width: 110px;
+    height: 110px;
+    border-radius: 16px;
+    background: var(--global-code-bg-color, #f4f4f4);
+    border: 1px solid var(--global-divider-color, #e0e0e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
 
-  .project-entry:hover .project-visual img {
-    opacity: 1;
+  .project-entry:hover .project-icon-wrap {
     transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  .project-visual img {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
   }
 
   @media (max-width: 600px) {
@@ -91,7 +100,9 @@ nav_order: 2
       <p class="project-body">A central framework in cultural psychology contrasts analytic and holistic cognition, largely derived from East Asian–Western comparisons. In this project, I examine how well this framework generalizes across additional cultural contexts using experimental tasks that tap visual attention, judgment of change, causal attribution, syllogistic reasoning, and item categorization. The aim is to assess when the analytic–holistic distinction extends beyond the West–East cultural boundaries.</p>
     </div>
     <div class="project-visual">
-      <img src="{{ '/assets/icons/cognitive-style.png' | relative_url }}" alt="Cognitive Styles">
+      <div class="project-icon-wrap">
+        <img src="{{ '/assets/icons/cognitive-style.png' | relative_url }}" alt="Cognitive Styles">
+      </div>
     </div>
   </div>
 
@@ -102,7 +113,9 @@ nav_order: 2
       <p class="project-body">This project investigates whether honor values uniquely predict prejudice above and beyond established ideological orientations such as right-wing authoritarianism and social dominance orientation, across multiple target groups. Existing research offers mixed evidence on whether honor contributes independently to intergroup bias or merely overlaps with existing constructs. Using a combination of survey and experimental methods, this project disentangles the motivational foundations of honor, SDO, and RWA, and tests whether different target groups and threat types selectively activate these motives. The goal is to clarify when and why honor predicts prejudice, and to specify the conditions under which its effects diverge from broader ideological dispositions.</p>
     </div>
     <div class="project-visual">
-      <img src="{{ '/assets/icons/predictors-of-prejudice.png' | relative_url }}" alt="Honor, Ideology, and Prejudice">
+      <div class="project-icon-wrap">
+        <img src="{{ '/assets/icons/predictors-of-prejudice.png' | relative_url }}" alt="Honor, Ideology, and Prejudice">
+      </div>
     </div>
   </div>
 
@@ -113,7 +126,9 @@ nav_order: 2
       <p class="project-body">Why do some groups escalate conflicts mainly when they have the power to win, while others escalate even when the odds are against them? This question sits at the intersection of psychology and international relations, where competing theories emphasize instrumental calculations versus reputational concerns. Drawing on historical interstate disputes and large-scale behavioral data from Clash of Clans online videogame, this project examines how the balance between power and reputation in conflict escalation varies across cultures, and whether similar patterns emerge across international politics and virtual competition.</p>
     </div>
     <div class="project-visual">
-      <img src="{{ '/assets/icons/conflict-strategies.png' | relative_url }}" alt="Cultural Variation in Conflict Strategy">
+      <div class="project-icon-wrap">
+        <img src="{{ '/assets/icons/conflict-strategies.png' | relative_url }}" alt="Cultural Variation in Conflict Strategy">
+      </div>
     </div>
   </div>
 
