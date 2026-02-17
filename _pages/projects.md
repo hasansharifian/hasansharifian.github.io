@@ -9,12 +9,11 @@ nav_order: 2
 <style>
   .project-entry {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 160px;
     gap: 2.5rem;
-    padding: 2.5rem 0;
+    padding: 2.8rem 0;
     border-bottom: 1px solid var(--global-divider-color, #e8e8e8);
-    align-items: start;
-    transition: background 0.2s;
+    align-items: center;
   }
 
   .project-entry:first-child {
@@ -27,42 +26,39 @@ nav_order: 2
 
   .project-number {
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--global-theme-color);
-    margin-bottom: 0.6rem;
-    opacity: 0.8;
+    margin-bottom: 0.5rem;
   }
 
   .project-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.9rem 0;
     color: var(--global-text-color);
     line-height: 1.3;
   }
 
   .project-body {
-    font-size: 0.95rem;
-    line-height: 1.8;
-    color: var(--global-text-color-light, #555);
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--global-text-color);
     margin: 0;
   }
 
   .project-visual {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 0.25rem;
+    justify-content: center;
   }
 
   .project-icon-wrap {
-    width: 110px;
-    height: 110px;
-    border-radius: 16px;
-    background: var(--global-code-bg-color, #f4f4f4);
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    background: var(--global-code-bg-color, #f0f0f0);
     border: 1px solid var(--global-divider-color, #e0e0e0);
     display: flex;
     align-items: center;
@@ -71,14 +67,21 @@ nav_order: 2
   }
 
   .project-entry:hover .project-icon-wrap {
-    transform: scale(1.05);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   }
 
   .project-visual img {
-    width: 68px;
-    height: 68px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  html[data-theme="dark"] .project-visual img,
+  [data-bs-theme="dark"] .project-visual img {
+    mix-blend-mode: normal;
+    filter: brightness(1.1);
   }
 
   @media (max-width: 600px) {
