@@ -49,8 +49,8 @@ external_services:
 # -----------------------------------------------------------------------------
 # RSS feed is disabled. To re-enable, add jekyll-feed back to the plugins list
 # and remove feed: show: false below.
-feed:
-  show: false
+socials:
+  rss: false
 
 # -----------------------------------------------------------------------------
 # Layout
