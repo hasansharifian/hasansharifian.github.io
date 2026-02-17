@@ -54,34 +54,26 @@ nav_order: 2
     justify-content: center;
   }
 
-  .project-icon-wrap {
-    width: 140px;
-    height: 140px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    /* Dark background in light mode so dark PNGs are visible */
-    background: #2a2a2a;
-  }
-
-  /* In dark mode, use a slightly lighter surface so icons still contrast */
-  html[data-theme="dark"] .project-icon-wrap,
-  [data-bs-theme="dark"] .project-icon-wrap {
-    background: #3a3a3a;
-    border: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .project-entry:hover .project-icon-wrap {
-    transform: scale(1.04);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-  }
-
   .project-visual img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
+    /* Invert dark icons for light mode so they become light and visible */
+    filter: invert(1);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.85;
+  }
+
+  /* In dark mode, icons are already light — no inversion needed */
+  html[data-theme="dark"] .project-visual img,
+  [data-bs-theme="dark"] .project-visual img {
+    filter: invert(0);
+    opacity: 1;
+  }
+
+  .project-entry:hover .project-visual img {
+    transform: scale(1.06);
+    opacity: 1;
   }
 
   @media (max-width: 600px) {
@@ -103,9 +95,7 @@ nav_order: 2
       <p class="project-body">A central framework in cultural psychology contrasts analytic and holistic cognition, largely derived from East Asian–Western comparisons. In this project, I examine how well this framework generalizes across additional cultural contexts using experimental tasks that tap visual attention, judgment of change, causal attribution, syllogistic reasoning, and item categorization. The aim is to assess when the analytic–holistic distinction extends beyond the West–East cultural boundaries.</p>
     </div>
     <div class="project-visual">
-      <div class="project-icon-wrap">
-        <img src="{{ '/assets/icons/cognitive-style.png' | relative_url }}" alt="Cognitive Styles">
-      </div>
+      <img src="{{ '/assets/icons/cognitive-style.png' | relative_url }}" alt="Cognitive Styles">
     </div>
   </div>
 
@@ -116,9 +106,7 @@ nav_order: 2
       <p class="project-body">This project investigates whether honor values uniquely predict prejudice above and beyond established ideological orientations such as right-wing authoritarianism and social dominance orientation, across multiple target groups. Existing research offers mixed evidence on whether honor contributes independently to intergroup bias or merely overlaps with existing constructs. Using a combination of survey and experimental methods, this project disentangles the motivational foundations of honor, SDO, and RWA, and tests whether different target groups and threat types selectively activate these motives. The goal is to clarify when and why honor predicts prejudice, and to specify the conditions under which its effects diverge from broader ideological dispositions.</p>
     </div>
     <div class="project-visual">
-      <div class="project-icon-wrap">
-        <img src="{{ '/assets/icons/predictors-of-prejudice.png' | relative_url }}" alt="Honor, Ideology, and Prejudice">
-      </div>
+      <img src="{{ '/assets/icons/predictors-of-prejudice.png' | relative_url }}" alt="Honor, Ideology, and Prejudice">
     </div>
   </div>
 
@@ -129,9 +117,7 @@ nav_order: 2
       <p class="project-body">Why do some groups escalate conflicts mainly when they have the power to win, while others escalate even when the odds are against them? This question sits at the intersection of psychology and international relations, where competing theories emphasize instrumental calculations versus reputational concerns. Drawing on historical interstate disputes and large-scale behavioral data from Clash of Clans online videogame, this project examines how the balance between power and reputation in conflict escalation varies across cultures, and whether similar patterns emerge across international politics and virtual competition.</p>
     </div>
     <div class="project-visual">
-      <div class="project-icon-wrap">
-        <img src="{{ '/assets/icons/conflict-strategies.png' | relative_url }}" alt="Cultural Variation in Conflict Strategy">
-      </div>
+      <img src="{{ '/assets/icons/conflict-strategies.png' | relative_url }}" alt="Cultural Variation in Conflict Strategy">
     </div>
   </div>
 
