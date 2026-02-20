@@ -143,24 +143,3 @@ nav_order: 2
     <a href="mailto:hasan_sharifian@yahoo.com">hasan_sharifian@yahoo.com</a>
   </div>
 </div>
-
-<style>
-  .contact-footer {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--global-divider-color, #e8e8e8);
-    font-size: 0.9rem;
-    line-height: 2;
-    color: var(--global-text-color-light, #888);
-    text-align: center;
-  }
-
-  .contact-footer a {
-    color: var(--global-text-color-light, #888);
-    text-decoration: none;
-  }
-
-  .contact-footer a:hover {
-    color: var(--global-theme-color);
-  }
-</style>
