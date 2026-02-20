@@ -11,20 +11,17 @@
   {% endif %}
 {% endcapture %}
 
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
+<footer role="contentinfo">
+  {% if site.newsletter.enabled %}
+    {% include newsletter.liquid %}
+  {% endif %}
+  <div class="container">
+    <hr style="margin: 60px 0 30px 0; border: none; border-top: 1px solid #eee;">
+    <div style="text-align:center; font-size:0.9rem; line-height:1.7; opacity:0.85;">
+      MohammadHasan Sharifian<br>
+      Department of Psychology, University of Michigan<br>
+      East Hall, 530 Church Street, Ann Arbor, MI 48109<br>
+      <a href="mailto:sharifih@umich.edu">sharifih@umich.edu</a>
     </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
-
-    <div class="container">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% endif %}
+  </div>
+</footer>
