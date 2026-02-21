@@ -130,16 +130,3 @@ nav_order: 2
 
 </div>
 
-<div class="contact-footer">
-  <div>Department of Psychology, University of Michigan</div>
-  <div>
-    <a href="https://maps.google.com/?q=530+Church+Street,+Ann+Arbor,+MI+48109" target="_blank" rel="noopener">
-      530 Church Street, Ann Arbor, MI 48109
-    </a>
-  </div>
-  <div>
-    <a href="mailto:sharifih@umich.edu">sharifih@umich.edu</a>
-    &nbsp;·&nbsp;
-    <a href="mailto:hasan_sharifian@yahoo.com">hasan_sharifian@yahoo.com</a>
-  </div>
-</div>
