@@ -97,7 +97,6 @@ nav_order: 2
 
   <div class="project-entry">
     <div class="project-text">
-      <div class="project-number">Project 01</div>
       <h3 class="project-title">Honor, Ideology, and Prejudice</h3>
       <p class="project-body">This project investigates whether honor values uniquely predict prejudice above and beyond established ideological orientations such as right-wing authoritarianism and social dominance orientation, across multiple target groups. Existing research offers mixed evidence on whether honor contributes independently to intergroup bias or merely overlaps with existing constructs. Using a combination of survey and experimental methods, this project disentangles the motivational foundations of honor, SDO, and RWA, and tests whether different target groups and threat types selectively activate these motives. The goal is to clarify when and why honor predicts prejudice, and to specify the conditions under which its effects diverge from broader ideological dispositions.</p>
     </div>
@@ -108,7 +107,6 @@ nav_order: 2
 
   <div class="project-entry">
     <div class="project-text">
-      <div class="project-number">Project 02</div>
       <h3 class="project-title">Cultural Variation in Conflict Strategy</h3>
       <p class="project-body">Why do some groups escalate conflicts mainly when they have the power to win, while others escalate even when the odds are against them? This question sits at the intersection of psychology and international relations, where competing theories emphasize instrumental calculations versus reputational concerns. Drawing on historical interstate disputes and large-scale behavioral data from Clash of Clans online videogame, this project examines how the balance between power and reputation in conflict escalation varies across cultures, and whether similar patterns emerge across international politics and virtual competition.</p>
     </div>
@@ -119,7 +117,6 @@ nav_order: 2
 
   <div class="project-entry">
     <div class="project-text">
-      <div class="project-number">Project 03</div>
       <h3 class="project-title">Cognitive Styles</h3>
       <p class="project-body">A central framework in cultural psychology contrasts analytic and holistic cognition, largely derived from East Asian–Western comparisons. In this project, I examine how well this framework generalizes across additional cultural contexts using experimental tasks that tap visual attention, judgment of change, causal attribution, syllogistic reasoning, and item categorization. The aim is to assess when the analytic–holistic distinction extends beyond the West–East cultural boundaries.</p>
     </div>
