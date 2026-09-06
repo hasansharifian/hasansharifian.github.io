@@ -9,7 +9,7 @@ nav_order: 2
 <style>
   .project-entry {
     display: grid;
-    grid-template-columns: 1fr 160px;
+    grid-template-columns: minmax(0, 1fr) 180px;
     gap: 2.5rem;
     padding: 2.8rem 0;
     border-bottom: 1px solid var(--global-divider-color, #e8e8e8);
@@ -59,17 +59,26 @@ nav_order: 2
     width: 180px;
     height: 180px;
     object-fit: contain;
-    /* Invert dark icons for light mode so they become light and visible */
+    /* Most project icons have a dark source background. */
     filter: invert(1);
     transition: transform 0.3s, opacity 0.3s;
     opacity: 0.85;
   }
 
-  /* In dark mode, icons are already light — no inversion needed */
+  /* The UN-speech artwork has a light source background. */
+  .project-visual img.light-source-icon {
+    filter: none;
+  }
+
   html[data-theme="dark"] .project-visual img,
   [data-bs-theme="dark"] .project-visual img {
-    filter: invert(0);
+    filter: none;
     opacity: 1;
+  }
+
+  html[data-theme="dark"] .project-visual img.light-source-icon,
+  [data-bs-theme="dark"] .project-visual img.light-source-icon {
+    filter: invert(1);
   }
 
   .project-entry:hover .project-visual img {
@@ -81,11 +90,13 @@ nav_order: 2
     .project-entry {
       grid-template-columns: 1fr;
     }
+
     .project-visual {
       display: flex;
       justify-content: center;
       margin-top: 1.5rem;
     }
+
     .project-visual img {
       width: 90px;
       height: 90px;
@@ -94,16 +105,6 @@ nav_order: 2
 </style>
 
 <div class="projects-list">
-
-  <div class="project-entry">
-    <div class="project-text">
-      <h3 class="project-title">Honor, Ideology, and Prejudice</h3>
-      <p class="project-body">This project investigates whether honor values uniquely predict prejudice above and beyond established ideological orientations such as right-wing authoritarianism and social dominance orientation, across multiple target groups. Existing research offers mixed evidence on whether honor contributes independently to intergroup bias or merely overlaps with existing constructs. Using a combination of survey and experimental methods, this project disentangles the motivational foundations of honor, SDO, and RWA, and tests whether different target groups and threat types selectively activate these motives. The goal is to clarify when and why honor predicts prejudice, and to specify the conditions under which its effects diverge from broader ideological dispositions.</p>
-    </div>
-    <div class="project-visual">
-      <img src="{{ '/assets/icons/predictors-of-prejudice.png' | relative_url }}" alt="Honor, Ideology, and Prejudice">
-    </div>
-  </div>
 
   <div class="project-entry">
     <div class="project-text">
@@ -117,6 +118,26 @@ nav_order: 2
 
   <div class="project-entry">
     <div class="project-text">
+      <h3 class="project-title">Honor and War: A Modeling Extension</h3>
+      <p class="project-body">How does honor shape decisions about intergroup conflict? Honor has been argued to serve an evolutionary function, helping groups adapt to threats and survive in challenging environments. In this project, I use game theory and agent-based modeling to ask whether honor can play a functional role in international conflict as well. I incorporate honor into actors’ strategic calculations about whether to fight or back down, alongside material power, the stakes of conflict, and the costs of war. I then examine when sensitivity to honor helps actors survive, expand, or puts them at a disadvantage.</p>
+    </div>
+    <div class="project-visual">
+      <img src="{{ '/assets/icons/honor-war-modeling.png' | relative_url }}" alt="Honor and War: A Modeling Extension">
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-text">
+      <h3 class="project-title">Human Values in Political Speech</h3>
+      <p class="project-body">How are values expressed in political speeches? Previous studies have found links between values and foreign policy preferences at the individual level, but the extent to which world leaders’ policy positions reflect underlying values is less established. In this project, I use text analysis to identify, analyze, and compare Schwartz values in speeches given by world leaders at the United Nations General Assembly. More than eight decades of speeches from countries around the world provide a valuable resource for examining how human values vary across cultures and over time, and how they are associated with political outcomes.</p>
+    </div>
+    <div class="project-visual">
+      <img class="light-source-icon" src="{{ '/assets/icons/human-values-political-speech.png' | relative_url }}" alt="Human Values in Political Speech">
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-text">
       <h3 class="project-title">Cognitive Styles</h3>
       <p class="project-body">A central framework in cultural psychology contrasts analytic and holistic cognition, largely derived from East Asian–Western comparisons. In this project, I examine how well this framework generalizes across additional cultural contexts using experimental tasks that tap visual attention, judgment of change, causal attribution, syllogistic reasoning, and item categorization. The aim is to assess when the analytic–holistic distinction extends beyond the West–East cultural boundaries.</p>
     </div>
@@ -125,5 +146,14 @@ nav_order: 2
     </div>
   </div>
 
-</div>
+  <div class="project-entry">
+    <div class="project-text">
+      <h3 class="project-title">Honor, Ideology, and Prejudice</h3>
+      <p class="project-body">This project investigates whether honor values uniquely predict prejudice above and beyond established ideological orientations such as right-wing authoritarianism and social dominance orientation, across multiple target groups. Existing research offers mixed evidence on whether honor contributes independently to intergroup bias or merely overlaps with existing constructs. Using a combination of survey and experimental methods, this project disentangles the motivational foundations of honor, SDO, and RWA, and tests whether different target groups and threat types selectively activate these motives. The goal is to clarify when and why honor predicts prejudice, and to specify the conditions under which its effects diverge from broader ideological dispositions.</p>
+    </div>
+    <div class="project-visual">
+      <img src="{{ '/assets/icons/predictors-of-prejudice.png' | relative_url }}" alt="Honor, Ideology, and Prejudice">
+    </div>
+  </div>
 
+</div>
