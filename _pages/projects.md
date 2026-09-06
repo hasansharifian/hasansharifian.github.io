@@ -122,7 +122,7 @@ nav_order: 2
       <p class="project-body">How does honor shape decisions about intergroup conflict? Honor has been argued to serve an evolutionary function, helping groups adapt to threats and survive in challenging environments. In this project, I use game theory and agent-based modeling to ask whether honor can play a functional role in international conflict as well. I incorporate honor into actors’ strategic calculations about whether to fight or back down, alongside material power, the stakes of conflict, and the costs of war. I then examine when sensitivity to honor helps actors survive, expand, or puts them at a disadvantage.</p>
     </div>
     <div class="project-visual">
-      <img src="{{ '/assets/icons/honor-war-modeling.png' | relative_url }}" alt="Honor and War: A Modeling Extension">
+      <img src="{{ '/assets/icons/ABM.png' | relative_url }}" alt="Honor and War: A Modeling Extension">
     </div>
   </div>
 
