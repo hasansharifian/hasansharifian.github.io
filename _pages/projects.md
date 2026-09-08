@@ -7,24 +7,24 @@ nav_order: 2
 ---
 
 <style>
-  .project-entry {
+  .projects-list .project-entry {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 180px;
+    grid-template-columns: 1fr 160px;
     gap: 2.5rem;
     padding: 2.8rem 0;
     border-bottom: 1px solid var(--global-divider-color, #e8e8e8);
     align-items: center;
   }
 
-  .project-entry:first-child {
+  .projects-list .project-entry:first-child {
     padding-top: 0.5rem;
   }
 
-  .project-entry:last-child {
+  .projects-list .project-entry:last-child {
     border-bottom: none;
   }
 
-  .project-number {
+  .projects-list .project-number {
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -33,7 +33,7 @@ nav_order: 2
     margin-bottom: 0.5rem;
   }
 
-  .project-title {
+  .projects-list .project-title {
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0 0 0.9rem 0;
@@ -41,7 +41,7 @@ nav_order: 2
     line-height: 1.3;
   }
 
-  .project-body {
+  .projects-list .project-body {
     text-align: justify;
     font-size: 1rem;
     line-height: 1.85;
@@ -49,55 +49,51 @@ nav_order: 2
     margin: 0;
   }
 
-  .project-visual {
+  .projects-list .project-visual {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .project-visual img {
+  .projects-list .project-visual img {
     width: 180px;
     height: 180px;
     object-fit: contain;
-    /* Most project icons have a dark source background. */
     filter: invert(1);
     transition: transform 0.3s, opacity 0.3s;
     opacity: 0.85;
   }
 
   /* The UN-speech artwork has a light source background. */
-  .project-visual img.light-source-icon {
+  .projects-list .project-visual img.light-source-icon {
     filter: none;
   }
 
-  html[data-theme="dark"] .project-visual img,
-  [data-bs-theme="dark"] .project-visual img {
+  html[data-theme="dark"] .projects-list .project-visual img {
     filter: none;
     opacity: 1;
   }
 
-  html[data-theme="dark"] .project-visual img.light-source-icon,
-  [data-bs-theme="dark"] .project-visual img.light-source-icon {
+  html[data-theme="dark"] .projects-list .project-visual img.light-source-icon {
     filter: invert(1);
   }
 
-  .project-entry:hover .project-visual img {
+  .projects-list .project-entry:hover .project-visual img {
     transform: scale(1.06);
     opacity: 1;
   }
 
   @media (max-width: 600px) {
-    .project-entry {
+    .projects-list .project-entry {
       grid-template-columns: 1fr;
     }
 
-    .project-visual {
-      display: flex;
+    .projects-list .project-visual {
       justify-content: center;
       margin-top: 1.5rem;
     }
 
-    .project-visual img {
+    .projects-list .project-visual img {
       width: 90px;
       height: 90px;
     }
@@ -105,6 +101,16 @@ nav_order: 2
 </style>
 
 <div class="projects-list">
+
+  <div class="project-entry">
+    <div class="project-text">
+      <h3 class="project-title">Cognitive Styles</h3>
+      <p class="project-body">A central framework in cultural psychology contrasts analytic and holistic cognition, largely derived from East Asian–Western comparisons. In this project, I examine how well this framework generalizes across additional cultural contexts using experimental tasks that tap visual attention, judgment of change, causal attribution, syllogistic reasoning, and item categorization. The aim is to assess when the analytic–holistic distinction extends beyond the West–East cultural boundaries.</p>
+    </div>
+    <div class="project-visual">
+      <img src="{{ '/assets/icons/cognitive-style.png' | relative_url }}" alt="Cognitive Styles">
+    </div>
+  </div>
 
   <div class="project-entry">
     <div class="project-text">
@@ -118,11 +124,11 @@ nav_order: 2
 
   <div class="project-entry">
     <div class="project-text">
-      <h3 class="project-title">Honor and War: A Modeling Extension</h3>
+      <h3 class="project-title">Honor and Conflict: A Modeling Extension</h3>
       <p class="project-body">How does honor shape decisions about intergroup conflict? Honor has been argued to serve an evolutionary function, helping groups adapt to threats and survive in challenging environments. In this project, I use game theory and agent-based modeling to ask whether honor can play a functional role in international conflict as well. I incorporate honor into actors’ strategic calculations about whether to fight or back down, alongside material power, the stakes of conflict, and the costs of war. I then examine when sensitivity to honor helps actors survive, expand, or puts them at a disadvantage.</p>
     </div>
     <div class="project-visual">
-      <img src="{{ '/assets/icons/ABM.png' | relative_url }}" alt="Honor and War: A Modeling Extension">
+      <img src="{{ '/assets/icons/ABM.png' | relative_url }}" alt="Honor and Conflict: A Modeling Extension">
     </div>
   </div>
 
@@ -133,16 +139,6 @@ nav_order: 2
     </div>
     <div class="project-visual">
       <img class="light-source-icon" src="{{ '/assets/icons/human-values-political-speech.png' | relative_url }}" alt="Human Values in Political Speech">
-    </div>
-  </div>
-
-  <div class="project-entry">
-    <div class="project-text">
-      <h3 class="project-title">Cognitive Styles</h3>
-      <p class="project-body">A central framework in cultural psychology contrasts analytic and holistic cognition, largely derived from East Asian–Western comparisons. In this project, I examine how well this framework generalizes across additional cultural contexts using experimental tasks that tap visual attention, judgment of change, causal attribution, syllogistic reasoning, and item categorization. The aim is to assess when the analytic–holistic distinction extends beyond the West–East cultural boundaries.</p>
-    </div>
-    <div class="project-visual">
-      <img src="{{ '/assets/icons/cognitive-style.png' | relative_url }}" alt="Cognitive Styles">
     </div>
   </div>
 
