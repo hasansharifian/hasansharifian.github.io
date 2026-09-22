@@ -136,6 +136,7 @@ nav_order: 2
     <div class="project-text">
       <h3 class="project-title">Human Values in Political Speech</h3>
       <p class="project-body">How are values expressed in political speeches? Previous studies have found links between values and foreign policy preferences at the individual level, but the extent to which world leaders’ policy positions reflect underlying values is less established. In this project, I use text analysis to identify, analyze, and compare Schwartz values in speeches given by world leaders at the United Nations General Assembly. More than eight decades of speeches from countries around the world provide a valuable resource for examining how human values vary across cultures and over time, and how they are associated with political outcomes.</p>
+      <p class="project-body">You can explore a data visualization tool through <a href="{{ '/un-speech-values/' | relative_url }}">this link</a>.</p>
     </div>
     <div class="project-visual">
       <img class="light-source-icon" src="{{ '/assets/icons/human-values-political-speech.png' | relative_url }}" alt="Human Values in Political Speech">
