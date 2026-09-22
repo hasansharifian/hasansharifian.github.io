@@ -7,6 +7,11 @@ sitemap: false
 ---
 
 <style>
+  /* This page only: wider than the site's usual 930px. */
+  .container {
+    max-width: 1200px;
+  }
+
   #un-speech-app {
     display: block;
     width: 100%;
