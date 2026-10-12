@@ -8,7 +8,7 @@ nav_order: 3
 
 <div class="cv-container">
   <div class="cv-actions">
-    <a href="{{ '/assets/pdf/2025.12-CV.pdf' | relative_url }}" target="_blank" rel="noopener" class="cv-download">
+    <a href="{{ '/assets/pdf/2026.10-CV.pdf' | relative_url }}" target="_blank" rel="noopener" class="cv-download">
       <i class="fa-solid fa-download"></i> Download PDF
     </a>
   </div>
@@ -16,7 +16,7 @@ nav_order: 3
   <!-- Desktop: native iframe -->
   <div class="cv-desktop">
     <iframe
-      src="{{ '/assets/pdf/2025.12-CV.pdf' | relative_url }}"
+      src="{{ '/assets/pdf/2026.10-CV.pdf' | relative_url }}"
       class="cv-frame"
       title="Curriculum Vitae">
     </iframe>
@@ -25,7 +25,7 @@ nav_order: 3
   <!-- Mobile: Google Docs viewer which works on all devices -->
   <div class="cv-mobile">
     <iframe
-      src="https://docs.google.com/viewer?url={{ site.url }}/assets/pdf/2025.12-CV.pdf&embedded=true"
+      src="https://docs.google.com/viewer?url={{ site.url }}/assets/pdf/2026.10-CV.pdf&embedded=true"
       class="cv-frame"
       title="Curriculum Vitae">
     </iframe>
